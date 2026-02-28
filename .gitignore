@@ -13,11 +13,7 @@ build/
 .env.*.local
 
 # Raw source data (large, downloaded separately)
-data/slab2/
-data/crescent-cfm/
-data/gage-gps/
-data/cszm9/
-data/gebco/
+/data/
 
 # Python
 __pycache__/
@@ -42,3 +38,10 @@ npm-debug.log*
 
 # Cesium workers (generated at build time)
 public/cesium/
+
+# Internal docs, plans, and AI config
+CLAUDE.md
+ARCHITECTURE.md
+REQUIREMENTS.md
+DATA_SOURCES.md
+docs/plans/

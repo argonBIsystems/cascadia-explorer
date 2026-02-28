@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pioneer-fragment",
+    "title": "Pioneer Fragment",
+    "subtitle": "Orphaned slab fragment beneath Oregon",
+    "description": "A detached piece of the Farallon plate discovered beneath central Oregon at ~200-400 km depth. This 'orphan' fragment provides evidence that slab tearing has shaped the subduction zone's geometry over millions of years.",
+    "latitude": 44.5,
+    "longitude": -121.5,
+    "depth": 300,
+    "category": "slab-tear",
+    "paper": {
+      "title": "Rayleigh wave tomography of the Cascadia subduction zone",
+      "authors": "Hawley et al., 2016",
+      "url": "https://doi.org/10.1002/2016JB013350"
+    }
+  },
+  {
+    "id": "siletzia-terrane",
+    "title": "Siletzia Terrane Boundary",
+    "subtitle": "Accreted oceanic plateau affecting plate coupling",
+    "description": "Siletzia is a large igneous province accreted to North America ~50 Ma. Its dense, rigid basaltic crust creates a sharp rheological boundary that influences megathrust coupling, segmenting the subduction zone and affecting rupture behavior.",
+    "latitude": 45.5,
+    "longitude": -123.0,
+    "depth": 30,
+    "category": "terrane",
+    "paper": {
+      "title": "Segmentation of the Cascadia subduction zone by Siletzia",
+      "authors": "Wells et al., 2017",
+      "url": "https://doi.org/10.1130/G38985.1"
+    }
+  },
+  {
+    "id": "mendocino-slab-gap",
+    "title": "Slab Gap at Cape Mendocino",
+    "subtitle": "Southern edge tear in the subducting plate",
+    "description": "At the Mendocino Triple Junction, the southern terminus of Cascadia subduction, a slab gap or tear has been imaged where the Gorda plate meets the transform boundary. This gap allows asthenospheric flow and influences volcanism in northern California.",
+    "latitude": 40.5,
+    "longitude": -124.5,
+    "depth": 80,
+    "category": "slab-tear",
+    "paper": {
+      "title": "Slab fragmentation and edge flow: implications for the origin of the Yellowstone hotspot track",
+      "authors": "James et al., 2011",
+      "url": "https://doi.org/10.1016/j.epsl.2011.09.007"
+    }
+  },
+  {
+    "id": "olympic-serpentinization",
+    "title": "Deep Fluid Pathways",
+    "subtitle": "Serpentinization and fluid release beneath the Olympics",
+    "description": "Seismic studies reveal low-velocity zones beneath the Olympic Peninsula interpreted as serpentinized mantle wedge. Water released from the subducting slab transforms mantle peridotite into serpentinite, weakening the plate interface and triggering episodic tremor.",
+    "latitude": 47.5,
+    "longitude": -123.0,
+    "depth": 40,
+    "category": "fluid-pathway",
+    "paper": {
+      "title": "Serpentinization of the forearc mantle",
+      "authors": "Bostock et al., 2002",
+      "url": "https://doi.org/10.1130/0091-7613(2002)030<1009:SOTFM>2.0.CO;2"
+    }
+  },
+  {
+    "id": "ets-zone",
+    "title": "Episodic Tremor and Slip Zone",
+    "subtitle": "Slow slip and non-volcanic tremor on the megathrust",
+    "description": "Every ~14 months, the Cascadia megathrust experiences slow-slip events accompanied by non-volcanic tremor at 25-45 km depth. These ETS events occur downdip of the locked seismogenic zone and release stress equivalent to a M6.5+ earthquake over weeks.",
+    "latitude": 48.5,
+    "longitude": -123.5,
+    "depth": 35,
+    "category": "slow-slip",
+    "paper": {
+      "title": "Episodic tremor and slip on the Cascadia subduction zone",
+      "authors": "Rogers & Dragert, 2003",
+      "url": "https://doi.org/10.1126/science.1084783"
+    }
+  },
+  {
+    "id": "gorda-deformation",
+    "title": "Gorda Plate Deformation",
+    "subtitle": "Internal deformation of the youngest oceanic plate",
+    "description": "The small Gorda plate, south of the Blanco Fracture Zone, undergoes intense internal deformation due to compression between the Pacific and North American plates. This produces frequent intraplate earthquakes and complicates hazard assessment for northern California and southern Oregon.",
+    "latitude": 41.5,
+    "longitude": -126.0,
+    "depth": 15,
+    "category": "plate-deformation",
+    "paper": {
+      "title": "Deformation of the Gorda plate",
+      "authors": "Chaytor et al., 2004",
+      "url": "https://doi.org/10.1029/2003JB002956"
+    }
+  },
+  {
+    "id": "blanco-fracture-zone",
+    "title": "Blanco Fracture Zone",
+    "subtitle": "Transform fault separating Juan de Fuca and Gorda plates",
+    "description": "The Blanco Fracture Zone is a ~350 km long right-lateral transform fault connecting the Juan de Fuca and Gorda ridges. It produces frequent M5-6 earthquakes and acts as a structural boundary that may limit southward rupture propagation during great Cascadia earthquakes.",
+    "latitude": 43.5,
+    "longitude": -129.0,
+    "depth": 10,
+    "category": "transform-fault",
+    "paper": {
+      "title": "Along-strike variations in fault frictional properties along the Blanco Transform Fault",
+      "authors": "Braunmiller & Nabelek, 2008",
+      "url": "https://doi.org/10.1016/j.tecto.2008.05.018"
+    }
+  }
+]

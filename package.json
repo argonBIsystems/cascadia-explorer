@@ -1,0 +1,41 @@
+{
+  "name": "cascadia-explorer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "npx serve dist -s -l tcp://0.0.0.0:$PORT",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5",
+    "cesium": "^1.138",
+    "react": "^19",
+    "react-dom": "^19",
+    "resium": "^1.19",
+    "serve": "^14",
+    "zustand": "^5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9",
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4",
+    "eslint": "^9",
+    "eslint-plugin-react-hooks": "^5",
+    "eslint-plugin-react-refresh": "^0.4",
+    "globals": "^16",
+    "tailwindcss": "^4",
+    "typescript": "~5.7",
+    "typescript-eslint": "^8",
+    "vite": "^6",
+    "vite-plugin-static-copy": "^2"
+  }
+}

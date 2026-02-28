@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "cesium/Build/Cesium/Widgets/widgets.css";
+
+@theme {
+  --color-base: #080c14;
+  --color-panel: rgba(255, 255, 255, 0.04);
+  --color-panel-border: rgba(255, 255, 255, 0.08);
+  --color-panel-border-hover: rgba(255, 255, 255, 0.12);
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Hide Cesium default UI — we build our own */
+.cesium-viewer-toolbar,
+.cesium-viewer-animationContainer,
+.cesium-viewer-timelineContainer,
+.cesium-viewer-bottom,
+.cesium-viewer-fullscreenContainer,
+.cesium-viewer-geocoderContainer,
+.cesium-viewer-infoBoxContainer,
+.cesium-viewer-selectionIndicatorContainer,
+.cesium-viewer-navigationHelpButtonContainer {
+  display: none !important;
+}
+
+.cesium-widget canvas {
+  outline: none;
+}

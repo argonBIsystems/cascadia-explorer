@@ -1,0 +1,212 @@
+[
+  {
+    "id": "cszm9-01",
+    "name": "Full Margin Rupture - Scenario 1",
+    "description": "M9.0 full-margin rupture with concentrated slip near the Cascadia deformation front. Strong shaking along the entire coast from northern California to southern British Columbia.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-02",
+    "name": "Full Margin Rupture - Scenario 2",
+    "description": "M9.0 full-margin rupture with slip concentrated offshore Oregon. Strongest shaking in the central Cascadia region.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-03",
+    "name": "Full Margin Rupture - Scenario 3",
+    "description": "M9.0 full-margin rupture with broadly distributed slip. Moderate-to-strong shaking across the full margin with no dominant peak.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-04",
+    "name": "Full Margin Rupture - Scenario 4",
+    "description": "M9.0 full-margin rupture with concentrated slip offshore Washington. Strongest shaking in the Puget Sound region.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-05",
+    "name": "Full Margin Rupture - Scenario 5",
+    "description": "M9.0 full-margin rupture with two slip patches: one offshore Oregon and one offshore Washington.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-06",
+    "name": "Full Margin Rupture - Scenario 6",
+    "description": "M9.0 full-margin rupture with downdip slip concentration. Enhanced shaking in the Willamette Valley and Puget Sound basins.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-07",
+    "name": "Full Margin Rupture - Scenario 7",
+    "description": "M9.0 full-margin rupture with updip slip focus near the trench. Strong coastal shaking, reduced inland intensity.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-08",
+    "name": "Full Margin Rupture - Scenario 8",
+    "description": "M9.0 full-margin rupture with enhanced slip in the northern Oregon segment. Strong shaking from Astoria to Newport.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-09",
+    "name": "Full Margin Rupture - Scenario 9",
+    "description": "M9.0 full-margin rupture with slip concentrated near the Strait of Juan de Fuca. Strong shaking in the Victoria-Seattle corridor.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-10",
+    "name": "Full Margin Rupture - Scenario 10",
+    "description": "M9.0 full-margin rupture with relatively uniform slip distribution. Representative of the average CSZM9 scenario.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-11",
+    "name": "Full Margin Rupture - Scenario 11",
+    "description": "M9.0 full-margin rupture with deep slip patches enhancing basin amplification in the Puget Sound and Willamette Valley.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-12",
+    "name": "Full Margin Rupture - Scenario 12",
+    "description": "M9.0 full-margin rupture with strong directivity effects toward the north. Enhanced shaking in the Seattle metropolitan area.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-13",
+    "name": "Full Margin Rupture - Scenario 13",
+    "description": "M9.0 full-margin rupture with strong directivity effects toward the south. Enhanced shaking in northern California.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-14",
+    "name": "Full Margin Rupture - Scenario 14",
+    "description": "M9.0 full-margin rupture with complex multi-patch slip distribution. Variable shaking intensity along the margin.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-15",
+    "name": "Full Margin Rupture - Scenario 15",
+    "description": "M9.0 full-margin rupture with maximum slip offshore southern Oregon. Strongest shaking between Coos Bay and Brookings.",
+    "magnitude": 9.0,
+    "type": "full-margin"
+  },
+  {
+    "id": "cszm9-16",
+    "name": "Southern Segment Rupture - Scenario 16",
+    "description": "M9.0 rupture focused on the southern Cascadia segment (Mendocino to central Oregon). Strongest shaking in northern California and southern Oregon.",
+    "magnitude": 9.0,
+    "type": "southern-segment"
+  },
+  {
+    "id": "cszm9-17",
+    "name": "Southern Segment Rupture - Scenario 17",
+    "description": "M9.0 rupture with enhanced slip near the Mendocino Triple Junction. Strong shaking in the Eureka-Crescent City area.",
+    "magnitude": 9.0,
+    "type": "southern-segment"
+  },
+  {
+    "id": "cszm9-18",
+    "name": "Southern Segment Rupture - Scenario 18",
+    "description": "M9.0 rupture with concentrated slip offshore southern Oregon. Strongest shaking in the Coos Bay and Roseburg areas.",
+    "magnitude": 9.0,
+    "type": "southern-segment"
+  },
+  {
+    "id": "cszm9-19",
+    "name": "Southern Segment Rupture - Scenario 19",
+    "description": "M9.0 rupture with slip distributed across the southern half of the margin. Moderate shaking from Eureka to Eugene.",
+    "magnitude": 9.0,
+    "type": "southern-segment"
+  },
+  {
+    "id": "cszm9-20",
+    "name": "Southern Segment Rupture - Scenario 20",
+    "description": "M9.0 rupture with deep slip focus in the southern segment. Enhanced basin amplification in the Rogue Valley.",
+    "magnitude": 9.0,
+    "type": "southern-segment"
+  },
+  {
+    "id": "cszm9-21",
+    "name": "Northern Segment Rupture - Scenario 21",
+    "description": "M9.0 rupture focused on the northern Cascadia segment (Washington to Vancouver Island). Strongest shaking in the Puget Sound region.",
+    "magnitude": 9.0,
+    "type": "northern-segment"
+  },
+  {
+    "id": "cszm9-22",
+    "name": "Northern Segment Rupture - Scenario 22",
+    "description": "M9.0 rupture with enhanced slip offshore Vancouver Island. Strong shaking in Victoria, Vancouver, and the San Juan Islands.",
+    "magnitude": 9.0,
+    "type": "northern-segment"
+  },
+  {
+    "id": "cszm9-23",
+    "name": "Northern Segment Rupture - Scenario 23",
+    "description": "M9.0 rupture with concentrated slip offshore the Olympic Peninsula. Strong shaking from Olympia to Bellingham.",
+    "magnitude": 9.0,
+    "type": "northern-segment"
+  },
+  {
+    "id": "cszm9-24",
+    "name": "Northern Segment Rupture - Scenario 24",
+    "description": "M9.0 rupture with slip distributed across the northern margin. Moderate-to-strong shaking from Portland to Vancouver BC.",
+    "magnitude": 9.0,
+    "type": "northern-segment"
+  },
+  {
+    "id": "cszm9-25",
+    "name": "Northern Segment Rupture - Scenario 25",
+    "description": "M9.0 rupture with deep slip in the northern segment producing amplified shaking in the Seattle basin and Georgia Strait.",
+    "magnitude": 9.0,
+    "type": "northern-segment"
+  },
+  {
+    "id": "cszm9-26",
+    "name": "Variable Rupture - Scenario 26",
+    "description": "M9.0 rupture with alternating high and low slip patches along the margin. Complex shaking pattern with localized intensity peaks.",
+    "magnitude": 9.0,
+    "type": "variable"
+  },
+  {
+    "id": "cszm9-27",
+    "name": "Variable Rupture - Scenario 27",
+    "description": "M9.0 rupture with supershear velocity in the central segment. Unusually strong shaking in the Willamette Valley.",
+    "magnitude": 9.0,
+    "type": "variable"
+  },
+  {
+    "id": "cszm9-28",
+    "name": "Variable Rupture - Scenario 28",
+    "description": "M9.0 rupture nucleating in the south and propagating northward with increasing slip. Strongest shaking in the Olympic Peninsula.",
+    "magnitude": 9.0,
+    "type": "variable"
+  },
+  {
+    "id": "cszm9-29",
+    "name": "Variable Rupture - Scenario 29",
+    "description": "M9.0 rupture nucleating in the north and propagating southward. Strongest shaking in northern California and southern Oregon.",
+    "magnitude": 9.0,
+    "type": "variable"
+  },
+  {
+    "id": "cszm9-30",
+    "name": "Variable Rupture - Scenario 30",
+    "description": "M9.0 rupture with stochastic slip distribution. Represents inherent variability in ground motion prediction for Cascadia M9 events.",
+    "magnitude": 9.0,
+    "type": "variable"
+  }
+]

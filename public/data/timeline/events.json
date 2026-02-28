@@ -1,0 +1,192 @@
+[
+  {
+    "id": "event-paleo-8000bce",
+    "year": -8000,
+    "title": "Ancient Turbidite Record Begins",
+    "description": "Marine sediment cores from the Cascadia margin reveal a turbidite record extending back ~10,000 years, documenting at least 41 full-margin ruptures. These offshore deposits, correlated across multiple canyon channels by researchers at Oregon State University, provide the longest paleoseismic record for any subduction zone and establish average recurrence intervals of ~200–600 years.",
+    "category": "paleoseismic",
+    "latitude": 44.5,
+    "longitude": -125.0,
+    "cameraAltitude": 1200000
+  },
+  {
+    "id": "event-paleo-3400bce",
+    "year": -3400,
+    "title": "Major Cascadia Earthquake (~3400 BCE)",
+    "description": "Turbidite evidence from multiple submarine canyons off the Oregon and Washington coast records a full-margin rupture around 3400 BCE. Correlated turbidite layers across widely separated channels indicate a large, coordinated event consistent with a M9-class earthquake affecting the entire subduction zone.",
+    "category": "paleoseismic",
+    "latitude": 45.0,
+    "longitude": -125.2,
+    "cameraAltitude": 1000000
+  },
+  {
+    "id": "event-paleo-1300bce",
+    "year": -1300,
+    "title": "Cascadia Earthquake (~1300 BCE)",
+    "description": "Paleoseismic evidence from coastal subsidence stratigraphy and offshore turbidite records identifies a major Cascadia Subduction Zone earthquake around 1300 BCE. Buried marshes and forest soils along the coasts of Oregon and Washington record abrupt coseismic subsidence consistent with a great megathrust event.",
+    "category": "paleoseismic",
+    "latitude": 45.5,
+    "longitude": -124.8,
+    "cameraAltitude": 1000000
+  },
+  {
+    "id": "event-paleo-700ce",
+    "year": 700,
+    "title": "Cascadia Earthquake (~700 CE)",
+    "description": "Coastal stratigraphy from estuaries in Washington and Oregon reveals buried tidal marshes and tsunami sand sheets dated to approximately 700 CE. This event is one of the best-documented pre-1700 Cascadia earthquakes, with evidence of rapid coseismic subsidence followed by tsunami inundation along the outer coast.",
+    "category": "paleoseismic",
+    "latitude": 46.5,
+    "longitude": -124.3,
+    "cameraAltitude": 1000000
+  },
+  {
+    "id": "event-1700",
+    "year": 1700,
+    "title": "The Great Cascadia Earthquake",
+    "description": "A M9.0+ earthquake struck on January 26, 1700, rupturing the entire ~1,100 km length of the Cascadia Subduction Zone from Vancouver Island to northern California. The event caused massive coastal subsidence and generated a trans-Pacific tsunami recorded in Japan as an 'orphan tsunami' (no locally felt earthquake). This is the last known full-margin rupture of the CSZ.",
+    "category": "megathrust",
+    "latitude": 46.0,
+    "longitude": -124.5,
+    "cameraAltitude": 800000
+  },
+  {
+    "id": "event-1949",
+    "year": 1949,
+    "title": "M6.7 Olympia Earthquake",
+    "description": "A M6.7 intraslab earthquake struck near Olympia, Washington on April 13, 1949, at a depth of ~54 km within the subducting Juan de Fuca plate. It caused 8 deaths, widespread damage across the Puget Sound region, and was one of the first major earthquakes to demonstrate the seismic hazard from deep events within the subducting slab beneath the Pacific Northwest.",
+    "category": "modern",
+    "latitude": 47.1,
+    "longitude": -122.7,
+    "cameraAltitude": 400000
+  },
+  {
+    "id": "event-1965",
+    "year": 1965,
+    "title": "M6.5 Puget Sound Earthquake",
+    "description": "On April 29, 1965, a M6.5 intraslab earthquake struck the Seattle-Tacoma area at a depth of ~60 km. The event killed 7 people and caused over $12.5 million in damage (1965 dollars). Like the 1949 Olympia event, it occurred within the subducting Juan de Fuca plate, highlighting the recurrent deep earthquake hazard in the Puget Sound region.",
+    "category": "modern",
+    "latitude": 47.4,
+    "longitude": -122.3,
+    "cameraAltitude": 400000
+  },
+  {
+    "id": "event-1980",
+    "year": 1980,
+    "title": "Mount St. Helens Eruption",
+    "description": "On May 18, 1980, Mount St. Helens in Washington state erupted catastrophically in the largest volcanic event in U.S. recorded history. The eruption, driven by magma generated from the subducting Juan de Fuca plate, produced a massive lateral blast, lahars, and a Plinian ash column. It killed 57 people and demonstrated the direct link between Cascadia subduction and Cascade Range volcanism.",
+    "category": "modern",
+    "latitude": 46.2,
+    "longitude": -122.18,
+    "cameraAltitude": 300000
+  },
+  {
+    "id": "event-1992",
+    "year": 1992,
+    "title": "M7.2 Cape Mendocino Earthquake",
+    "description": "A M7.2 thrust earthquake struck on April 25, 1992, near Petrolia, California, at the southern end of the Cascadia Subduction Zone near the Mendocino Triple Junction. This was the largest earthquake on the Cascadia megathrust in modern instrumented history, producing measurable coastal uplift and a small local tsunami. It confirmed that the southern CSZ is seismically active.",
+    "category": "megathrust",
+    "latitude": 40.33,
+    "longitude": -124.23,
+    "cameraAltitude": 400000
+  },
+  {
+    "id": "event-1999-ets",
+    "year": 1999,
+    "title": "First ETS Event Detected",
+    "description": "Geodetic and seismic researchers identified the first Episodic Tremor and Slip (ETS) event beneath the northern Cascadia Subduction Zone. GPS stations recorded transient reversals in surface motion accompanied by non-volcanic tremor at depths of 25–45 km along the plate interface. This discovery revealed a previously unknown mode of fault slip occurring every ~14 months.",
+    "category": "ets",
+    "latitude": 48.5,
+    "longitude": -123.5,
+    "cameraAltitude": 500000
+  },
+  {
+    "id": "event-2001",
+    "year": 2001,
+    "title": "M6.8 Nisqually Earthquake",
+    "description": "A M6.8 intraslab earthquake struck the southern Puget Sound region on February 28, 2001, at a depth of ~52 km within the subducting Juan de Fuca plate. The event caused approximately $2 billion in damage but no direct fatalities, making it the third major deep earthquake in the Puget Sound in 52 years (after 1949 and 1965).",
+    "category": "modern",
+    "latitude": 47.15,
+    "longitude": -122.73,
+    "cameraAltitude": 400000
+  },
+  {
+    "id": "event-2003-ets",
+    "year": 2003,
+    "title": "ETS Event Beneath Vancouver Island",
+    "description": "A well-documented ETS event was observed beneath southern Vancouver Island by the dense POLARIS seismograph array and GPS networks. Researchers at the Geological Survey of Canada tracked the tremor migration along the plate interface at rates of ~10 km/day, demonstrating that slow slip propagates as a wave along the subduction zone transition zone.",
+    "category": "ets",
+    "latitude": 48.7,
+    "longitude": -124.0,
+    "cameraAltitude": 500000
+  },
+  {
+    "id": "event-2007-ets",
+    "year": 2007,
+    "title": "ETS Event Refines Slip Models",
+    "description": "A major ETS episode in 2007 was captured by an expanded network of GPS and seismic stations across the Pacific Northwest. The event provided high-resolution constraints on the spatial distribution of slow slip, demonstrating that ETS events release stress equivalent to a M6.5–6.8 earthquake over several weeks. These observations refined models of fault coupling and stress loading on the locked megathrust.",
+    "category": "ets",
+    "latitude": 47.8,
+    "longitude": -123.2,
+    "cameraAltitude": 600000
+  },
+  {
+    "id": "event-2015-casie",
+    "year": 2015,
+    "title": "CASIE21 Offshore Seismic Experiment",
+    "description": "The Cascadia Initiative (CASIE21) deployed a large array of ocean-bottom seismometers and pressure sensors across the offshore Cascadia margin. This multi-year experiment provided the first comprehensive imaging of the subducting plate structure, sediment properties, and megathrust geometry offshore, filling a critical gap in seismic monitoring where the locked zone lies beneath the ocean.",
+    "category": "discovery",
+    "latitude": 44.5,
+    "longitude": -126.0,
+    "cameraAltitude": 800000
+  },
+  {
+    "id": "event-2018-slab2",
+    "year": 2018,
+    "title": "Hayes et al. Slab2 Model Published",
+    "description": "The USGS published the Slab2 global subduction zone geometry model (Hayes et al., 2018), providing a comprehensive three-dimensional model of the Cascadia subducting slab. The model integrates earthquake locations, seismic reflection profiles, and receiver function data to define the slab surface depth, dip, and strike along the entire margin, becoming a foundational dataset for hazard modeling.",
+    "category": "discovery",
+    "latitude": 45.0,
+    "longitude": -123.0,
+    "cameraAltitude": 1000000
+  },
+  {
+    "id": "event-2019-pioneer",
+    "year": 2019,
+    "title": "Pioneer Fragment Discovery",
+    "description": "Researchers identified the Pioneer Fragment, a previously unrecognized piece of oceanic lithosphere (a slab tear or gap) within the subducting plate beneath southern Cascadia. This discovery, based on seismic tomography and receiver function analysis, revealed a structural discontinuity that may influence megathrust segmentation, tremor distribution, and volcanic activity in the southern Cascade Range.",
+    "category": "discovery",
+    "latitude": 42.0,
+    "longitude": -123.5,
+    "cameraAltitude": 600000
+  },
+  {
+    "id": "event-2020-coupling",
+    "year": 2020,
+    "title": "Updated Fault Coupling Models",
+    "description": "New GPS-derived interseismic coupling models were published, incorporating over two decades of continuous GPS data from the Pacific Northwest Geodetic Array (PANGA) and other networks. These models revealed spatial variations in the degree of locking along the Cascadia megathrust, with strong coupling offshore and partial coupling extending beneath the coast, informing updated earthquake and tsunami hazard assessments.",
+    "category": "discovery",
+    "latitude": 45.5,
+    "longitude": -124.0,
+    "cameraAltitude": 900000
+  },
+  {
+    "id": "event-2022-crescent",
+    "year": 2022,
+    "title": "CRESCENT Community Fault Model",
+    "description": "The Cascadia Region Earthquake Science Center (CRESCENT) released a community fault model integrating the latest geological, geodetic, and seismological data for the Cascadia Subduction Zone. This collaborative model provides standardized fault geometries and parameters for use in seismic hazard analyses, ground motion simulations, and earthquake scenario planning across the region.",
+    "category": "discovery",
+    "latitude": 46.0,
+    "longitude": -123.5,
+    "cameraAltitude": 1000000
+  },
+  {
+    "id": "event-2024-m9catalog",
+    "year": 2024,
+    "title": "Updated M9.0 Scenario Catalog",
+    "description": "An updated catalog of M9.0 earthquake scenarios for the Cascadia Subduction Zone was published, incorporating improved fault geometry, heterogeneous slip distributions, and 3D velocity models. The catalog includes 30 physically plausible rupture realizations used for probabilistic hazard analysis, ground motion simulation, and tsunami modeling throughout the Pacific Northwest.",
+    "category": "discovery",
+    "latitude": 45.0,
+    "longitude": -124.0,
+    "cameraAltitude": 1200000
+  }
+]
