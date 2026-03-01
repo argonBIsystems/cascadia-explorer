@@ -1,5 +1,6 @@
 import { useAppStore } from '../../store/useAppStore';
 import { useAnnotationById } from '../layers/AnnotationLayer';
+import DrawerOverlay from '../ui/DrawerOverlay';
 import type { AnnotationCategory } from '../../types';
 
 const CATEGORY_LABELS: Record<AnnotationCategory, string> = {
@@ -9,6 +10,7 @@ const CATEGORY_LABELS: Record<AnnotationCategory, string> = {
   'slow-slip': 'Slow Slip',
   'plate-deformation': 'Plate Deformation',
   'transform-fault': 'Transform Fault',
+  'slab-fragment': 'Slab Fragment',
 };
 
 const CATEGORY_COLORS: Record<AnnotationCategory, string> = {
@@ -18,11 +20,13 @@ const CATEGORY_COLORS: Record<AnnotationCategory, string> = {
   'slow-slip': 'bg-emerald-500/20 text-emerald-300',
   'plate-deformation': 'bg-rose-500/20 text-rose-300',
   'transform-fault': 'bg-blue-500/20 text-blue-300',
+  'slab-fragment': 'bg-teal-500/20 text-teal-300',
 };
 
 export default function AnnotationInfoCard() {
   const selectedAnnotation = useAppStore((s) => s.selectedAnnotation);
   const setSelectedAnnotation = useAppStore((s) => s.setSelectedAnnotation);
+  const isMobile = useAppStore((s) => s.isMobile);
   const annotation = useAnnotationById(selectedAnnotation);
 
   if (!annotation) return null;
@@ -30,23 +34,14 @@ export default function AnnotationInfoCard() {
   const categoryLabel = CATEGORY_LABELS[annotation.category];
   const categoryColor = CATEGORY_COLORS[annotation.category];
 
-  return (
-    <div
-      className="
-        fixed right-4 top-[72px] z-50
-        w-[320px] max-h-[calc(100vh-160px)] overflow-y-auto
-        bg-[#0c1222]/[0.92] backdrop-blur-xl
-        border border-white/[0.18] rounded-2xl
-        p-5
-        annotation-card-enter
-      "
-    >
+  const cardContent = (
+    <>
       {/* Close button */}
       <button
         onClick={() => setSelectedAnnotation(null)}
         className="
           absolute top-3 right-3
-          w-6 h-6 flex items-center justify-center
+          w-10 h-10 md:w-6 md:h-6 flex items-center justify-center
           text-slate-400 hover:text-white
           transition-colors cursor-pointer
         "
@@ -138,13 +133,15 @@ export default function AnnotationInfoCard() {
         </a>
       </div>
 
-      {/* Pulse dot indicator */}
-      <div className="absolute -top-1.5 -right-1.5">
-        <span className="relative flex h-3 w-3">
-          <span className="annotation-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
-        </span>
-      </div>
+      {/* Pulse dot indicator — hidden on mobile (clipped by drawer overflow) */}
+      {!isMobile && (
+        <div className="absolute -top-1.5 -right-1.5">
+          <span className="relative flex h-3 w-3">
+            <span className="annotation-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
+          </span>
+        </div>
+      )}
 
       {/* Animations */}
       <style>{`
@@ -171,6 +168,31 @@ export default function AnnotationInfoCard() {
           animation: annotation-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
         }
       `}</style>
+    </>
+  );
+
+  if (isMobile) {
+    return (
+      <DrawerOverlay open={true} side="right" onClose={() => setSelectedAnnotation(null)}>
+        <div className="p-5 pt-14">
+          {cardContent}
+        </div>
+      </DrawerOverlay>
+    );
+  }
+
+  return (
+    <div
+      className="
+        fixed right-4 top-[72px] z-50
+        w-[320px] max-h-[calc(100vh-160px)] overflow-y-auto
+        bg-[#0c1222]/[0.92] backdrop-blur-xl
+        border border-white/[0.18] rounded-2xl
+        p-5
+        annotation-card-enter
+      "
+    >
+      {cardContent}
     </div>
   );
 }

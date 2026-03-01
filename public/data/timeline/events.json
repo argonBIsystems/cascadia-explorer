@@ -150,14 +150,24 @@
     "cameraAltitude": 1000000
   },
   {
-    "id": "event-2019-pioneer",
-    "year": 2019,
-    "title": "Pioneer Fragment Discovery",
-    "description": "Researchers identified the Pioneer Fragment, a previously unrecognized piece of oceanic lithosphere (a slab tear or gap) within the subducting plate beneath southern Cascadia. This discovery, based on seismic tomography and receiver function analysis, revealed a structural discontinuity that may influence megathrust segmentation, tremor distribution, and volcanic activity in the southern Cascade Range.",
+    "id": "event-2025-casie21",
+    "year": 2025,
+    "title": "Explorer Slab Tear Imaged (CASIE21)",
+    "description": "Results from the 2021 CASIE21 seismic experiment revealed a 35 km long, nearly vertical fracture in the descending Explorer slab with over 3 km of vertical offset. The discovery shows the Juan de Fuca plate system is actively fragmenting, a process that will continue over millions of years.",
     "category": "discovery",
-    "latitude": 42.0,
-    "longitude": -123.5,
-    "cameraAltitude": 600000
+    "latitude": 49.2,
+    "longitude": -129.5,
+    "cameraAltitude": 400000
+  },
+  {
+    "id": "event-2026-pioneer",
+    "year": 2026,
+    "title": "Pioneer Fragment Rediscovered (Shelly)",
+    "description": "David Shelly at the USGS discovered that low-frequency earthquakes (LFEs) track a captured fragment of the ancient Farallon plate sliding northward beneath North America at the Mendocino Triple Junction. The 'Pioneer Fragment' extends the slab interface beyond where models currently end and implies coupled seismic hazard between the Cascadia and San Andreas fault systems.",
+    "category": "discovery",
+    "latitude": 40.3,
+    "longitude": -124.2,
+    "cameraAltitude": 400000
   },
   {
     "id": "event-2020-coupling",

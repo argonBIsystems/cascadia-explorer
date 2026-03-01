@@ -3,11 +3,14 @@ import { useAppStore } from '../../store/useAppStore';
 
 interface TopBarProps {
   onAboutClick?: () => void;
+  onDataSourcesClick?: () => void;
+  onTourClick?: () => void;
 }
 
-export default function TopBar({ onAboutClick }: TopBarProps) {
+export default function TopBar({ onAboutClick, onDataSourcesClick, onTourClick }: TopBarProps) {
   const topBarVisible = useAppStore((s) => s.topBarVisible);
   const setTopBarVisible = useAppStore((s) => s.setTopBarVisible);
+  const isMobile = useAppStore((s) => s.isMobile);
   const hideTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearHideTimer = useCallback(() => {
@@ -25,6 +28,11 @@ export default function TopBar({ onAboutClick }: TopBarProps) {
   }, [clearHideTimer, setTopBarVisible]);
 
   useEffect(() => {
+    if (isMobile) {
+      setTopBarVisible(true);
+      return;
+    }
+
     const handleMouseMove = (e: MouseEvent) => {
       if (e.clientY < 60) {
         setTopBarVisible(true);
@@ -43,7 +51,7 @@ export default function TopBar({ onAboutClick }: TopBarProps) {
       window.removeEventListener('mousemove', handleMouseMove);
       clearHideTimer();
     };
-  }, [setTopBarVisible, clearHideTimer, startHideTimer]);
+  }, [isMobile, setTopBarVisible, clearHideTimer, startHideTimer]);
 
   const toggleFullscreen = useCallback(() => {
     if (!document.fullscreenElement) {
@@ -87,11 +95,39 @@ export default function TopBar({ onAboutClick }: TopBarProps) {
 
       {/* Right: Actions */}
       <div className="flex items-center gap-1">
+        {/* Tour button */}
+        <button
+          type="button"
+          onClick={onTourClick}
+          className="w-10 h-10 md:w-8 md:h-8 flex items-center justify-center rounded-md
+                     text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer"
+          aria-label="Take Tour"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none" />
+          </svg>
+        </button>
+
+        {/* Data Sources button */}
+        <button
+          type="button"
+          onClick={onDataSourcesClick}
+          className="w-10 h-10 md:w-8 md:h-8 flex items-center justify-center rounded-md
+                     text-slate-400 hover:text-white transition-colors cursor-pointer"
+          aria-label="Data Sources"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+        </button>
+
         {/* About button */}
         <button
           type="button"
           onClick={onAboutClick}
-          className="w-8 h-8 flex items-center justify-center rounded-md
+          className="w-10 h-10 md:w-8 md:h-8 flex items-center justify-center rounded-md
                      text-slate-400 hover:text-white transition-colors cursor-pointer"
           aria-label="About"
         >
@@ -102,7 +138,7 @@ export default function TopBar({ onAboutClick }: TopBarProps) {
         <button
           type="button"
           onClick={toggleFullscreen}
-          className="w-8 h-8 flex items-center justify-center rounded-md
+          className="w-10 h-10 md:w-8 md:h-8 flex items-center justify-center rounded-md
                      text-slate-400 hover:text-white transition-colors cursor-pointer"
           aria-label="Toggle fullscreen"
         >

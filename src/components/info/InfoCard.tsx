@@ -1,5 +1,6 @@
 import { useAppStore } from '../../store/useAppStore';
 import { getDepthColor } from '../../lib/color-scales';
+import DrawerOverlay from '../ui/DrawerOverlay';
 
 function formatRelativeTime(epochMs: number): string {
   const diff = Date.now() - epochMs;
@@ -23,6 +24,7 @@ function formatRelativeTime(epochMs: number): string {
 export default function InfoCard() {
   const selectedEarthquake = useAppStore((s) => s.selectedEarthquake);
   const setSelectedEarthquake = useAppStore((s) => s.setSelectedEarthquake);
+  const isMobile = useAppStore((s) => s.isMobile);
 
   if (!selectedEarthquake) return null;
 
@@ -31,23 +33,14 @@ export default function InfoCard() {
 
   const magColor = getDepthColor(depth);
 
-  return (
-    <div
-      className="
-        fixed right-4 top-[72px] z-50
-        w-[280px] max-h-[calc(100vh-160px)] overflow-y-auto
-        bg-[#0c1222]/[0.92] backdrop-blur-xl
-        border border-white/[0.18] rounded-2xl
-        p-5
-        animate-slide-in-right
-      "
-    >
+  const cardContent = (
+    <>
       {/* Close button */}
       <button
         onClick={() => setSelectedEarthquake(null)}
         className="
           absolute top-3 right-3
-          w-6 h-6 flex items-center justify-center
+          w-10 h-10 md:w-6 md:h-6 flex items-center justify-center
           text-slate-400 hover:text-white
           transition-colors cursor-pointer
         "
@@ -143,6 +136,31 @@ export default function InfoCard() {
           animation: slide-in-right 300ms ease-out forwards;
         }
       `}</style>
+    </>
+  );
+
+  if (isMobile) {
+    return (
+      <DrawerOverlay open={true} side="right" onClose={() => setSelectedEarthquake(null)}>
+        <div className="p-5 pt-14">
+          {cardContent}
+        </div>
+      </DrawerOverlay>
+    );
+  }
+
+  return (
+    <div
+      className="
+        fixed right-4 top-[72px] z-50
+        w-[280px] max-h-[calc(100vh-160px)] overflow-y-auto
+        bg-[#0c1222]/[0.92] backdrop-blur-xl
+        border border-white/[0.18] rounded-2xl
+        p-5
+        animate-slide-in-right
+      "
+    >
+      {cardContent}
     </div>
   );
 }

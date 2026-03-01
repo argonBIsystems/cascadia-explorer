@@ -57,6 +57,20 @@ interface AppState {
   // What-If scenario builder
   whatIfLocation: { lat: number; lon: number } | null;
   setWhatIfLocation: (loc: { lat: number; lon: number } | null) => void;
+
+  // ETS Tremor animation
+  selectedEtsEpisode: string | null;
+  setSelectedEtsEpisode: (id: string | null) => void;
+  tremorAnimationPlaying: boolean;
+  setTremorAnimationPlaying: (playing: boolean) => void;
+  tremorAnimationDay: number;
+  setTremorAnimationDay: (day: number) => void;
+
+  // Mobile UI
+  isMobile: boolean;
+  setIsMobile: (mobile: boolean) => void;
+  activeDrawer: 'layers' | 'scenarios' | 'info' | 'timeline' | null;
+  setActiveDrawer: (drawer: 'layers' | 'scenarios' | 'info' | 'timeline' | null) => void;
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -68,6 +82,13 @@ export const useAppStore = create<AppState>((set) => ({
     scenarios: { visible: false, loading: false, error: null },
     tsunami: { visible: false, loading: false, error: null },
     annotations: { visible: false, loading: false, error: null },
+    volcanoes: { visible: false, loading: false, error: null },
+    coupling: { visible: false, loading: false, error: null },
+    pioneer: { visible: false, loading: false, error: null },
+    paleoseismic: { visible: false, loading: false, error: null },
+    sensors: { visible: false, loading: false, error: null },
+    tremor: { visible: false, loading: false, error: null },
+    hazard: { visible: false, loading: false, error: null },
   },
   toggleLayer: (id) =>
     set((state) => ({
@@ -118,4 +139,16 @@ export const useAppStore = create<AppState>((set) => ({
   setSelectedTimelineEvent: (id) => set({ selectedTimelineEvent: id }),
   whatIfLocation: null,
   setWhatIfLocation: (loc) => set({ whatIfLocation: loc }),
+  selectedEtsEpisode: null,
+  setSelectedEtsEpisode: (id) => set({ selectedEtsEpisode: id }),
+  tremorAnimationPlaying: false,
+  setTremorAnimationPlaying: (playing) => set({ tremorAnimationPlaying: playing }),
+  tremorAnimationDay: 0,
+  setTremorAnimationDay: (day) => set({ tremorAnimationDay: day }),
+  isMobile: false,
+  setIsMobile: (mobile) => set({ isMobile: mobile }),
+  activeDrawer: null,
+  setActiveDrawer: (drawer) => set((state) => ({
+    activeDrawer: state.activeDrawer === drawer ? null : drawer,
+  })),
 }));

@@ -1,5 +1,6 @@
 import { useAppStore } from '../../store/useAppStore';
 import { useScenarioIndex } from '../../hooks/useScenarios';
+import DrawerOverlay from '../ui/DrawerOverlay';
 
 export default function ScenarioSelector() {
   const visible = useAppStore((s) => s.layers.scenarios.visible);
@@ -7,14 +8,15 @@ export default function ScenarioSelector() {
   const setSelectedScenario = useAppStore((s) => s.setSelectedScenario);
   const selectedEarthquake = useAppStore((s) => s.selectedEarthquake);
   const selectedAnnotation = useAppStore((s) => s.selectedAnnotation);
+  const isMobile = useAppStore((s) => s.isMobile);
+  const activeDrawer = useAppStore((s) => s.activeDrawer);
+  const setActiveDrawer = useAppStore((s) => s.setActiveDrawer);
   const { data: scenarios, isLoading } = useScenarioIndex();
-
-  if (!visible) return null;
 
   const hasInfoCard = selectedEarthquake != null || selectedAnnotation != null;
 
-  return (
-    <div className={`fixed right-4 ${hasInfoCard ? 'top-[360px]' : 'top-[72px]'} z-40 w-72 max-h-[calc(100vh-160px)] overflow-y-auto bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4 transition-[top] duration-300`}>
+  const content = (
+    <>
       <h3
         className="text-slate-100 mb-3"
         style={{ fontFamily: '"DM Sans", sans-serif', fontWeight: 600, fontSize: '14px' }}
@@ -59,6 +61,32 @@ export default function ScenarioSelector() {
           ))}
         </div>
       )}
+    </>
+  );
+
+  if (isMobile) {
+    return (
+      <DrawerOverlay
+        open={activeDrawer === 'scenarios'}
+        side="right"
+        onClose={() => setActiveDrawer(null)}
+      >
+        <div className="p-4 pt-14">
+          {!visible ? (
+            <p className="text-sm text-slate-500">Enable the &quot;M9 Scenarios&quot; layer to view scenarios.</p>
+          ) : (
+            content
+          )}
+        </div>
+      </DrawerOverlay>
+    );
+  }
+
+  if (!visible) return null;
+
+  return (
+    <div className={`fixed right-4 ${hasInfoCard ? 'top-[360px]' : 'top-[72px]'} z-40 w-72 max-h-[calc(100vh-160px)] overflow-y-auto bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4 transition-[top] duration-300`}>
+      {content}
     </div>
   );
 }

@@ -1,0 +1,4739 @@
+{
+  "source": "Simulated based on PNSN Tremor Catalog patterns",
+  "reference": "Rogers & Dragert (2003), Science 302; Bartlow (2020), GRL 47",
+  "episodes": [
+    {
+      "id": "ets-2023-09",
+      "label": "Sep 2023 (Washington)",
+      "startDate": "2023-09-15",
+      "endDate": "2023-10-08",
+      "region": "Washington",
+      "equivalentMagnitude": 6.7,
+      "totalDays": 24,
+      "frames": [
+        {
+          "day": 0,
+          "events": [
+            {
+              "lat": 48.4223,
+              "lon": -123.3275,
+              "depth": 31.4,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 48.4205,
+              "lon": -123.3278,
+              "depth": 35.6,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.4064,
+              "lon": -123.5219,
+              "depth": 31.3,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.5122,
+              "lon": -123.3352,
+              "depth": 37.8,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.4898,
+              "lon": -123.4665,
+              "depth": 40.2,
+              "amplitude": 5.2
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "events": [
+            {
+              "lat": 48.4744,
+              "lon": -123.4479,
+              "depth": 30.2,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.4021,
+              "lon": -123.5222,
+              "depth": 29.4,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 48.4555,
+              "lon": -123.3079,
+              "depth": 38.2,
+              "amplitude": 4.4
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "events": [
+            {
+              "lat": 48.2853,
+              "lon": -123.462,
+              "depth": 36.8,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.3419,
+              "lon": -123.4923,
+              "depth": 29.0,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 48.4242,
+              "lon": -123.2544,
+              "depth": 40.0,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 48.3456,
+              "lon": -123.414,
+              "depth": 39.7,
+              "amplitude": 3.1
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "events": [
+            {
+              "lat": 48.2462,
+              "lon": -123.4699,
+              "depth": 41.1,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 48.3262,
+              "lon": -123.4987,
+              "depth": 38.2,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.2802,
+              "lon": -123.2531,
+              "depth": 37.0,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.3413,
+              "lon": -123.2971,
+              "depth": 38.9,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 48.2108,
+              "lon": -123.4554,
+              "depth": 31.7,
+              "amplitude": 3.2
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "events": [
+            {
+              "lat": 48.3144,
+              "lon": -123.4556,
+              "depth": 37.2,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.322,
+              "lon": -123.4123,
+              "depth": 31.7,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 48.2514,
+              "lon": -123.4712,
+              "depth": 36.2,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.219,
+              "lon": -123.4842,
+              "depth": 42.0,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.1573,
+              "lon": -123.5359,
+              "depth": 29.5,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.2975,
+              "lon": -123.4234,
+              "depth": 28.9,
+              "amplitude": 3.8
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "events": [
+            {
+              "lat": 48.1797,
+              "lon": -123.2587,
+              "depth": 40.1,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 48.2181,
+              "lon": -123.3455,
+              "depth": 35.5,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 48.2021,
+              "lon": -123.5165,
+              "depth": 34.1,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.2647,
+              "lon": -123.2872,
+              "depth": 31.7,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.1096,
+              "lon": -123.2762,
+              "depth": 40.2,
+              "amplitude": 3.5
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "events": [
+            {
+              "lat": 48.1102,
+              "lon": -123.4903,
+              "depth": 33.2,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.1994,
+              "lon": -123.2733,
+              "depth": 40.9,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.1064,
+              "lon": -123.5164,
+              "depth": 33.1,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.1701,
+              "lon": -123.4782,
+              "depth": 31.4,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.0244,
+              "lon": -123.3304,
+              "depth": 39.4,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.1152,
+              "lon": -123.5123,
+              "depth": 37.2,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.0417,
+              "lon": -123.3917,
+              "depth": 36.5,
+              "amplitude": 5.9
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "events": [
+            {
+              "lat": 48.0945,
+              "lon": -123.343,
+              "depth": 38.0,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.0778,
+              "lon": -123.438,
+              "depth": 40.6,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 47.9931,
+              "lon": -123.5308,
+              "depth": 28.3,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.0612,
+              "lon": -123.5478,
+              "depth": 37.9,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 47.957,
+              "lon": -123.5406,
+              "depth": 32.6,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.9992,
+              "lon": -123.4044,
+              "depth": 35.5,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 48.12,
+              "lon": -123.3771,
+              "depth": 31.4,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "events": [
+            {
+              "lat": 47.9163,
+              "lon": -123.5209,
+              "depth": 34.0,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.9717,
+              "lon": -123.3313,
+              "depth": 37.4,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 47.8979,
+              "lon": -123.4292,
+              "depth": 32.8,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 47.928,
+              "lon": -123.4929,
+              "depth": 34.3,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.934,
+              "lon": -123.4751,
+              "depth": 40.9,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.0505,
+              "lon": -123.3849,
+              "depth": 28.7,
+              "amplitude": 6.0
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "events": [
+            {
+              "lat": 48.0068,
+              "lon": -123.2721,
+              "depth": 39.9,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.9102,
+              "lon": -123.4859,
+              "depth": 33.6,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 47.8888,
+              "lon": -123.2544,
+              "depth": 31.7,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 47.904,
+              "lon": -123.4231,
+              "depth": 41.4,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 47.9242,
+              "lon": -123.3345,
+              "depth": 30.2,
+              "amplitude": 3.5
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "events": [
+            {
+              "lat": 47.8637,
+              "lon": -123.3873,
+              "depth": 38.5,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 47.8647,
+              "lon": -123.3991,
+              "depth": 39.9,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.94,
+              "lon": -123.526,
+              "depth": 30.6,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.8829,
+              "lon": -123.4794,
+              "depth": 29.7,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.7971,
+              "lon": -123.3716,
+              "depth": 36.7,
+              "amplitude": 4.0
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "events": [
+            {
+              "lat": 47.7957,
+              "lon": -123.4551,
+              "depth": 31.7,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 47.7454,
+              "lon": -123.4703,
+              "depth": 29.8,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 47.7741,
+              "lon": -123.2713,
+              "depth": 41.1,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 47.8068,
+              "lon": -123.3811,
+              "depth": 29.4,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.7838,
+              "lon": -123.5103,
+              "depth": 32.9,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 47.7315,
+              "lon": -123.4645,
+              "depth": 34.1,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.7431,
+              "lon": -123.2548,
+              "depth": 39.3,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.8162,
+              "lon": -123.3836,
+              "depth": 41.0,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "events": [
+            {
+              "lat": 47.6703,
+              "lon": -123.2831,
+              "depth": 38.4,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.6737,
+              "lon": -123.4868,
+              "depth": 32.8,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.788,
+              "lon": -123.3984,
+              "depth": 31.5,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.6276,
+              "lon": -123.3597,
+              "depth": 39.6,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 47.6841,
+              "lon": -123.5108,
+              "depth": 41.7,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.7058,
+              "lon": -123.3383,
+              "depth": 35.9,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "events": [
+            {
+              "lat": 47.733,
+              "lon": -123.3863,
+              "depth": 39.7,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 47.5818,
+              "lon": -123.5118,
+              "depth": 32.3,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.7114,
+              "lon": -123.2918,
+              "depth": 40.6,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 47.6021,
+              "lon": -123.5192,
+              "depth": 38.9,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.6334,
+              "lon": -123.3638,
+              "depth": 30.2,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.7251,
+              "lon": -123.2571,
+              "depth": 39.4,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.5571,
+              "lon": -123.329,
+              "depth": 32.7,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.7126,
+              "lon": -123.2908,
+              "depth": 39.4,
+              "amplitude": 3.4
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "events": [
+            {
+              "lat": 47.5086,
+              "lon": -123.2883,
+              "depth": 40.0,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.6503,
+              "lon": -123.4119,
+              "depth": 32.3,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 47.5325,
+              "lon": -123.5429,
+              "depth": 30.7,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 47.6598,
+              "lon": -123.2599,
+              "depth": 31.9,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 47.5669,
+              "lon": -123.2557,
+              "depth": 35.5,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.51,
+              "lon": -123.2589,
+              "depth": 30.5,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 47.54,
+              "lon": -123.5175,
+              "depth": 34.1,
+              "amplitude": 5.0
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "events": [
+            {
+              "lat": 47.509,
+              "lon": -123.2547,
+              "depth": 29.6,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.4598,
+              "lon": -123.5367,
+              "depth": 34.1,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.583,
+              "lon": -123.3439,
+              "depth": 41.2,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.4611,
+              "lon": -123.4206,
+              "depth": 41.3,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.5464,
+              "lon": -123.351,
+              "depth": 29.7,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.5232,
+              "lon": -123.3499,
+              "depth": 32.6,
+              "amplitude": 4.9
+            }
+          ]
+        },
+        {
+          "day": 16,
+          "events": [
+            {
+              "lat": 47.382,
+              "lon": -123.4239,
+              "depth": 41.2,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.5371,
+              "lon": -123.3653,
+              "depth": 32.2,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.3566,
+              "lon": -123.4639,
+              "depth": 34.0,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 47.4875,
+              "lon": -123.4105,
+              "depth": 34.2,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 47.4512,
+              "lon": -123.2796,
+              "depth": 39.1,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.3735,
+              "lon": -123.3954,
+              "depth": 36.9,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 47.5202,
+              "lon": -123.3247,
+              "depth": 37.4,
+              "amplitude": 3.3
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "events": [
+            {
+              "lat": 47.3208,
+              "lon": -123.5361,
+              "depth": 41.8,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.445,
+              "lon": -123.4134,
+              "depth": 40.4,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 47.435,
+              "lon": -123.4348,
+              "depth": 33.6,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.4288,
+              "lon": -123.2822,
+              "depth": 40.0,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.447,
+              "lon": -123.4843,
+              "depth": 39.3,
+              "amplitude": 4.9
+            }
+          ]
+        },
+        {
+          "day": 18,
+          "events": [
+            {
+              "lat": 47.2361,
+              "lon": -123.4752,
+              "depth": 39.9,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 47.3864,
+              "lon": -123.3497,
+              "depth": 41.8,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.4161,
+              "lon": -123.2826,
+              "depth": 36.6,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 47.327,
+              "lon": -123.3008,
+              "depth": 35.7,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.3748,
+              "lon": -123.4076,
+              "depth": 31.6,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 47.3536,
+              "lon": -123.3203,
+              "depth": 35.3,
+              "amplitude": 4.7
+            }
+          ]
+        },
+        {
+          "day": 19,
+          "events": [
+            {
+              "lat": 47.2488,
+              "lon": -123.3359,
+              "depth": 31.3,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 47.3395,
+              "lon": -123.5258,
+              "depth": 30.1,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 47.1914,
+              "lon": -123.4858,
+              "depth": 33.8,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 47.2541,
+              "lon": -123.5313,
+              "depth": 39.7,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 47.3148,
+              "lon": -123.2662,
+              "depth": 28.3,
+              "amplitude": 5.6
+            }
+          ]
+        },
+        {
+          "day": 20,
+          "events": [
+            {
+              "lat": 47.1717,
+              "lon": -123.5482,
+              "depth": 32.9,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.2663,
+              "lon": -123.264,
+              "depth": 33.9,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.2049,
+              "lon": -123.369,
+              "depth": 31.1,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.1828,
+              "lon": -123.5413,
+              "depth": 32.7,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.1765,
+              "lon": -123.5005,
+              "depth": 34.5,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 47.2201,
+              "lon": -123.5419,
+              "depth": 33.5,
+              "amplitude": 4.5
+            }
+          ]
+        },
+        {
+          "day": 21,
+          "events": [
+            {
+              "lat": 47.0472,
+              "lon": -123.4214,
+              "depth": 40.1,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.0825,
+              "lon": -123.4518,
+              "depth": 34.4,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 47.2064,
+              "lon": -123.4665,
+              "depth": 41.3,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.1974,
+              "lon": -123.4089,
+              "depth": 38.5,
+              "amplitude": 2.7
+            }
+          ]
+        },
+        {
+          "day": 22,
+          "events": [
+            {
+              "lat": 47.0101,
+              "lon": -123.5294,
+              "depth": 41.4,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 46.9714,
+              "lon": -123.4758,
+              "depth": 39.7,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 47.0129,
+              "lon": -123.4079,
+              "depth": 29.6,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.0582,
+              "lon": -123.4731,
+              "depth": 33.2,
+              "amplitude": 4.6
+            }
+          ]
+        },
+        {
+          "day": 23,
+          "events": [
+            {
+              "lat": 47.0437,
+              "lon": -123.3167,
+              "depth": 30.3,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 47.0157,
+              "lon": -123.2713,
+              "depth": 36.1,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 46.9751,
+              "lon": -123.2676,
+              "depth": 30.8,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.0661,
+              "lon": -123.4771,
+              "depth": 37.8,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 47.0369,
+              "lon": -123.3083,
+              "depth": 39.1,
+              "amplitude": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ets-2022-05",
+      "label": "May 2022 (Vancouver Island)",
+      "startDate": "2022-05-10",
+      "endDate": "2022-05-29",
+      "region": "Vancouver Island",
+      "equivalentMagnitude": 6.5,
+      "totalDays": 20,
+      "frames": [
+        {
+          "day": 0,
+          "events": [
+            {
+              "lat": 48.9694,
+              "lon": -123.6215,
+              "depth": 33.2,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.9682,
+              "lon": -123.4951,
+              "depth": 39.5,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 49.0922,
+              "lon": -123.5593,
+              "depth": 39.6,
+              "amplitude": 5.0
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "events": [
+            {
+              "lat": 48.8721,
+              "lon": -123.5935,
+              "depth": 37.1,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 49.0208,
+              "lon": -123.5176,
+              "depth": 34.5,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.9553,
+              "lon": -123.6533,
+              "depth": 31.4,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.8926,
+              "lon": -123.6148,
+              "depth": 38.5,
+              "amplitude": 4.5
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "events": [
+            {
+              "lat": 48.8495,
+              "lon": -123.7414,
+              "depth": 39.9,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.8161,
+              "lon": -123.5107,
+              "depth": 32.8,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.9139,
+              "lon": -123.6671,
+              "depth": 28.1,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.7908,
+              "lon": -123.534,
+              "depth": 34.8,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.9118,
+              "lon": -123.5562,
+              "depth": 34.9,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.7923,
+              "lon": -123.6835,
+              "depth": 37.7,
+              "amplitude": 3.6
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "events": [
+            {
+              "lat": 48.7843,
+              "lon": -123.584,
+              "depth": 32.8,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.8206,
+              "lon": -123.6445,
+              "depth": 34.4,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.7566,
+              "lon": -123.5336,
+              "depth": 32.4,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.9007,
+              "lon": -123.543,
+              "depth": 30.7,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.7658,
+              "lon": -123.5731,
+              "depth": 38.6,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.9066,
+              "lon": -123.5002,
+              "depth": 32.1,
+              "amplitude": 3.8
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "events": [
+            {
+              "lat": 48.6502,
+              "lon": -123.5898,
+              "depth": 31.8,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.758,
+              "lon": -123.5408,
+              "depth": 29.8,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 48.7455,
+              "lon": -123.4882,
+              "depth": 36.0,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.7355,
+              "lon": -123.6947,
+              "depth": 28.7,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.7429,
+              "lon": -123.5034,
+              "depth": 33.6,
+              "amplitude": 2.8
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "events": [
+            {
+              "lat": 48.7215,
+              "lon": -123.7045,
+              "depth": 39.4,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.6012,
+              "lon": -123.6755,
+              "depth": 35.8,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.7034,
+              "lon": -123.5645,
+              "depth": 38.9,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 48.7659,
+              "lon": -123.6608,
+              "depth": 36.2,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.6979,
+              "lon": -123.7319,
+              "depth": 41.4,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.7368,
+              "lon": -123.5623,
+              "depth": 31.7,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.6322,
+              "lon": -123.5844,
+              "depth": 30.2,
+              "amplitude": 3.9
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "events": [
+            {
+              "lat": 48.6398,
+              "lon": -123.6626,
+              "depth": 31.2,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 48.6617,
+              "lon": -123.6138,
+              "depth": 37.6,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.6786,
+              "lon": -123.5625,
+              "depth": 37.3,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.6061,
+              "lon": -123.5866,
+              "depth": 37.1,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.6864,
+              "lon": -123.7286,
+              "depth": 30.3,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.6708,
+              "lon": -123.5792,
+              "depth": 32.0,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 48.6588,
+              "lon": -123.5401,
+              "depth": 41.2,
+              "amplitude": 4.3
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "events": [
+            {
+              "lat": 48.5454,
+              "lon": -123.5706,
+              "depth": 40.5,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.5786,
+              "lon": -123.7422,
+              "depth": 31.2,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 48.63,
+              "lon": -123.5739,
+              "depth": 28.3,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.6222,
+              "lon": -123.5771,
+              "depth": 38.7,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.5617,
+              "lon": -123.6173,
+              "depth": 31.9,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.5451,
+              "lon": -123.5057,
+              "depth": 41.6,
+              "amplitude": 4.1
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "events": [
+            {
+              "lat": 48.4614,
+              "lon": -123.549,
+              "depth": 40.0,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 48.5335,
+              "lon": -123.6635,
+              "depth": 41.2,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.5048,
+              "lon": -123.6136,
+              "depth": 32.4,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.5888,
+              "lon": -123.6287,
+              "depth": 35.2,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.5263,
+              "lon": -123.5872,
+              "depth": 33.8,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 48.4671,
+              "lon": -123.5231,
+              "depth": 36.8,
+              "amplitude": 5.2
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "events": [
+            {
+              "lat": 48.385,
+              "lon": -123.7107,
+              "depth": 32.0,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.4285,
+              "lon": -123.7413,
+              "depth": 36.8,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.4735,
+              "lon": -123.6568,
+              "depth": 28.2,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.3765,
+              "lon": -123.4976,
+              "depth": 29.6,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.4611,
+              "lon": -123.7038,
+              "depth": 41.1,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 48.4727,
+              "lon": -123.6254,
+              "depth": 34.8,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "events": [
+            {
+              "lat": 48.3787,
+              "lon": -123.6349,
+              "depth": 40.9,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.4443,
+              "lon": -123.4908,
+              "depth": 31.9,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.3514,
+              "lon": -123.4697,
+              "depth": 35.1,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.325,
+              "lon": -123.6604,
+              "depth": 36.2,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.3663,
+              "lon": -123.7054,
+              "depth": 35.5,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 48.3788,
+              "lon": -123.587,
+              "depth": 34.4,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.3062,
+              "lon": -123.5408,
+              "depth": 36.0,
+              "amplitude": 3.3
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "events": [
+            {
+              "lat": 48.214,
+              "lon": -123.5266,
+              "depth": 37.9,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.2825,
+              "lon": -123.5509,
+              "depth": 39.5,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.3043,
+              "lon": -123.7389,
+              "depth": 35.0,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.3792,
+              "lon": -123.4877,
+              "depth": 34.2,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.2966,
+              "lon": -123.5333,
+              "depth": 33.7,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 48.2361,
+              "lon": -123.6092,
+              "depth": 41.6,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 48.3438,
+              "lon": -123.555,
+              "depth": 39.9,
+              "amplitude": 5.5
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "events": [
+            {
+              "lat": 48.2181,
+              "lon": -123.655,
+              "depth": 38.1,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.3166,
+              "lon": -123.7392,
+              "depth": 29.0,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.3263,
+              "lon": -123.4508,
+              "depth": 38.5,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.1618,
+              "lon": -123.5599,
+              "depth": 40.2,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.2809,
+              "lon": -123.479,
+              "depth": 28.6,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.2008,
+              "lon": -123.6375,
+              "depth": 30.0,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.2553,
+              "lon": -123.5122,
+              "depth": 30.4,
+              "amplitude": 2.8
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "events": [
+            {
+              "lat": 48.2029,
+              "lon": -123.6778,
+              "depth": 40.8,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 48.1712,
+              "lon": -123.6738,
+              "depth": 31.6,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 48.2399,
+              "lon": -123.4796,
+              "depth": 37.5,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.1673,
+              "lon": -123.6463,
+              "depth": 36.2,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.1638,
+              "lon": -123.675,
+              "depth": 39.8,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 48.1559,
+              "lon": -123.605,
+              "depth": 31.3,
+              "amplitude": 4.5
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "events": [
+            {
+              "lat": 48.075,
+              "lon": -123.5402,
+              "depth": 28.3,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.095,
+              "lon": -123.7476,
+              "depth": 40.1,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.2105,
+              "lon": -123.4768,
+              "depth": 38.4,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.1964,
+              "lon": -123.5173,
+              "depth": 31.2,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.0596,
+              "lon": -123.693,
+              "depth": 31.5,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.1693,
+              "lon": -123.5457,
+              "depth": 29.9,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.1413,
+              "lon": -123.7382,
+              "depth": 39.0,
+              "amplitude": 2.6
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "events": [
+            {
+              "lat": 48.0991,
+              "lon": -123.723,
+              "depth": 32.1,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.9878,
+              "lon": -123.7104,
+              "depth": 35.6,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.0588,
+              "lon": -123.476,
+              "depth": 39.6,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 48.1176,
+              "lon": -123.6054,
+              "depth": 39.3,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.0204,
+              "lon": -123.7154,
+              "depth": 41.5,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 48.1459,
+              "lon": -123.492,
+              "depth": 38.1,
+              "amplitude": 5.9
+            }
+          ]
+        },
+        {
+          "day": 16,
+          "events": [
+            {
+              "lat": 47.9626,
+              "lon": -123.5128,
+              "depth": 28.2,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.9804,
+              "lon": -123.5482,
+              "depth": 37.4,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.054,
+              "lon": -123.4679,
+              "depth": 29.5,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.8945,
+              "lon": -123.4847,
+              "depth": 35.9,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.9337,
+              "lon": -123.731,
+              "depth": 39.5,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.9499,
+              "lon": -123.6275,
+              "depth": 30.0,
+              "amplitude": 5.8
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "events": [
+            {
+              "lat": 48.0255,
+              "lon": -123.7152,
+              "depth": 31.3,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.904,
+              "lon": -123.6387,
+              "depth": 41.3,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.9344,
+              "lon": -123.5738,
+              "depth": 38.2,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.9573,
+              "lon": -123.4999,
+              "depth": 36.6,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.8823,
+              "lon": -123.5429,
+              "depth": 31.0,
+              "amplitude": 4.1
+            }
+          ]
+        },
+        {
+          "day": 18,
+          "events": [
+            {
+              "lat": 47.9342,
+              "lon": -123.7202,
+              "depth": 37.6,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.9587,
+              "lon": -123.6424,
+              "depth": 33.6,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 47.7876,
+              "lon": -123.4956,
+              "depth": 34.4,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 47.8915,
+              "lon": -123.5709,
+              "depth": 28.3,
+              "amplitude": 5.3
+            }
+          ]
+        },
+        {
+          "day": 19,
+          "events": [
+            {
+              "lat": 47.8978,
+              "lon": -123.5139,
+              "depth": 30.9,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 47.8108,
+              "lon": -123.5741,
+              "depth": 39.4,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.8549,
+              "lon": -123.5134,
+              "depth": 36.3,
+              "amplitude": 3.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ets-2021-03",
+      "label": "Mar 2021 (Washington)",
+      "startDate": "2021-03-05",
+      "endDate": "2021-03-26",
+      "region": "Washington",
+      "equivalentMagnitude": 6.6,
+      "totalDays": 22,
+      "frames": [
+        {
+          "day": 0,
+          "events": [
+            {
+              "lat": 47.0975,
+              "lon": -123.2879,
+              "depth": 39.2,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 47.0733,
+              "lon": -123.4105,
+              "depth": 33.0,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 47.0178,
+              "lon": -123.4453,
+              "depth": 31.7,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "events": [
+            {
+              "lat": 47.0766,
+              "lon": -123.2263,
+              "depth": 34.7,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 47.0741,
+              "lon": -123.4173,
+              "depth": 35.1,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 46.9801,
+              "lon": -123.215,
+              "depth": 40.1,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.063,
+              "lon": -123.1608,
+              "depth": 28.9,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "events": [
+            {
+              "lat": 47.1281,
+              "lon": -123.4176,
+              "depth": 38.0,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 47.2227,
+              "lon": -123.3534,
+              "depth": 30.1,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 47.1677,
+              "lon": -123.2744,
+              "depth": 38.0,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 47.1623,
+              "lon": -123.3615,
+              "depth": 35.1,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.2015,
+              "lon": -123.4157,
+              "depth": 37.2,
+              "amplitude": 5.6
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "events": [
+            {
+              "lat": 47.2585,
+              "lon": -123.3855,
+              "depth": 34.3,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.1821,
+              "lon": -123.314,
+              "depth": 33.8,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.1996,
+              "lon": -123.2505,
+              "depth": 33.2,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.2989,
+              "lon": -123.4299,
+              "depth": 39.6,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.1336,
+              "lon": -123.2284,
+              "depth": 39.4,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.2316,
+              "lon": -123.2815,
+              "depth": 32.6,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "events": [
+            {
+              "lat": 47.3604,
+              "lon": -123.1677,
+              "depth": 33.9,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.196,
+              "lon": -123.3637,
+              "depth": 32.4,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 47.2872,
+              "lon": -123.4036,
+              "depth": 34.8,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 47.2557,
+              "lon": -123.2831,
+              "depth": 29.6,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 47.2309,
+              "lon": -123.3213,
+              "depth": 35.9,
+              "amplitude": 5.2
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "events": [
+            {
+              "lat": 47.3799,
+              "lon": -123.2572,
+              "depth": 28.4,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.423,
+              "lon": -123.3698,
+              "depth": 30.5,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 47.3189,
+              "lon": -123.3481,
+              "depth": 28.1,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 47.3704,
+              "lon": -123.3298,
+              "depth": 30.0,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 47.2633,
+              "lon": -123.2262,
+              "depth": 31.0,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.3253,
+              "lon": -123.339,
+              "depth": 38.1,
+              "amplitude": 5.2
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "events": [
+            {
+              "lat": 47.4478,
+              "lon": -123.185,
+              "depth": 30.2,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.3385,
+              "lon": -123.4255,
+              "depth": 34.2,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.45,
+              "lon": -123.3257,
+              "depth": 31.0,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.3976,
+              "lon": -123.4167,
+              "depth": 37.5,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.434,
+              "lon": -123.3575,
+              "depth": 31.1,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 47.3395,
+              "lon": -123.3887,
+              "depth": 41.2,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 47.4814,
+              "lon": -123.3632,
+              "depth": 29.7,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "events": [
+            {
+              "lat": 47.4351,
+              "lon": -123.3359,
+              "depth": 37.9,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.5667,
+              "lon": -123.2081,
+              "depth": 29.0,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 47.4085,
+              "lon": -123.4444,
+              "depth": 40.9,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 47.5152,
+              "lon": -123.278,
+              "depth": 37.9,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.423,
+              "lon": -123.4437,
+              "depth": 32.5,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 47.5236,
+              "lon": -123.2004,
+              "depth": 40.9,
+              "amplitude": 2.8
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "events": [
+            {
+              "lat": 47.5201,
+              "lon": -123.2733,
+              "depth": 35.3,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 47.5335,
+              "lon": -123.3481,
+              "depth": 32.7,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.5735,
+              "lon": -123.4158,
+              "depth": 35.1,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.5413,
+              "lon": -123.2318,
+              "depth": 39.5,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 47.5187,
+              "lon": -123.4061,
+              "depth": 30.8,
+              "amplitude": 4.6
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "events": [
+            {
+              "lat": 47.5579,
+              "lon": -123.1646,
+              "depth": 36.8,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 47.6556,
+              "lon": -123.2762,
+              "depth": 37.5,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.6715,
+              "lon": -123.154,
+              "depth": 32.5,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 47.6061,
+              "lon": -123.3181,
+              "depth": 34.6,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 47.7021,
+              "lon": -123.2726,
+              "depth": 32.9,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.6352,
+              "lon": -123.4387,
+              "depth": 33.2,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 47.6718,
+              "lon": -123.1568,
+              "depth": 29.3,
+              "amplitude": 4.6
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "events": [
+            {
+              "lat": 47.7068,
+              "lon": -123.2837,
+              "depth": 39.1,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.7042,
+              "lon": -123.2071,
+              "depth": 37.1,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 47.7094,
+              "lon": -123.4047,
+              "depth": 28.9,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 47.7941,
+              "lon": -123.347,
+              "depth": 38.0,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.6488,
+              "lon": -123.3757,
+              "depth": 34.1,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.7188,
+              "lon": -123.4024,
+              "depth": 33.2,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 47.696,
+              "lon": -123.3485,
+              "depth": 36.4,
+              "amplitude": 5.3
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "events": [
+            {
+              "lat": 47.7526,
+              "lon": -123.3511,
+              "depth": 35.8,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 47.7361,
+              "lon": -123.1945,
+              "depth": 41.5,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.7158,
+              "lon": -123.4255,
+              "depth": 37.3,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.7478,
+              "lon": -123.2532,
+              "depth": 37.3,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.8275,
+              "lon": -123.4246,
+              "depth": 35.8,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 47.7514,
+              "lon": -123.4117,
+              "depth": 37.8,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.8851,
+              "lon": -123.1763,
+              "depth": 29.3,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 47.7874,
+              "lon": -123.4445,
+              "depth": 32.3,
+              "amplitude": 5.8
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "events": [
+            {
+              "lat": 47.9467,
+              "lon": -123.3041,
+              "depth": 31.2,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.7726,
+              "lon": -123.1967,
+              "depth": 29.4,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 47.9242,
+              "lon": -123.1849,
+              "depth": 28.5,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 47.9104,
+              "lon": -123.4107,
+              "depth": 33.3,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.9234,
+              "lon": -123.2187,
+              "depth": 39.3,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.8447,
+              "lon": -123.3267,
+              "depth": 37.5,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.846,
+              "lon": -123.3645,
+              "depth": 38.5,
+              "amplitude": 4.1
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "events": [
+            {
+              "lat": 47.8764,
+              "lon": -123.1603,
+              "depth": 39.0,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.8674,
+              "lon": -123.2465,
+              "depth": 36.0,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.9825,
+              "lon": -123.2166,
+              "depth": 35.0,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.861,
+              "lon": -123.3901,
+              "depth": 36.5,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 47.839,
+              "lon": -123.3058,
+              "depth": 33.2,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.9709,
+              "lon": -123.2952,
+              "depth": 29.7,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.8606,
+              "lon": -123.3152,
+              "depth": 35.2,
+              "amplitude": 5.4
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "events": [
+            {
+              "lat": 48.0893,
+              "lon": -123.3834,
+              "depth": 34.3,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 47.9053,
+              "lon": -123.434,
+              "depth": 35.0,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 48.0989,
+              "lon": -123.3375,
+              "depth": 28.4,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.0678,
+              "lon": -123.255,
+              "depth": 39.1,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.9574,
+              "lon": -123.2011,
+              "depth": 37.7,
+              "amplitude": 3.0
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "events": [
+            {
+              "lat": 48.0653,
+              "lon": -123.2654,
+              "depth": 40.7,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 48.0146,
+              "lon": -123.4051,
+              "depth": 41.2,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.0561,
+              "lon": -123.2171,
+              "depth": 31.3,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 48.0191,
+              "lon": -123.2583,
+              "depth": 36.7,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 48.1388,
+              "lon": -123.3001,
+              "depth": 35.5,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.0864,
+              "lon": -123.2344,
+              "depth": 32.1,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 48.042,
+              "lon": -123.2788,
+              "depth": 30.6,
+              "amplitude": 4.8
+            }
+          ]
+        },
+        {
+          "day": 16,
+          "events": [
+            {
+              "lat": 48.2378,
+              "lon": -123.4297,
+              "depth": 35.4,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.2405,
+              "lon": -123.2838,
+              "depth": 33.5,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.17,
+              "lon": -123.1557,
+              "depth": 31.6,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 48.2006,
+              "lon": -123.3466,
+              "depth": 38.3,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.1972,
+              "lon": -123.2294,
+              "depth": 32.7,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 48.1521,
+              "lon": -123.2059,
+              "depth": 30.5,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.1358,
+              "lon": -123.2414,
+              "depth": 36.8,
+              "amplitude": 5.3
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "events": [
+            {
+              "lat": 48.2575,
+              "lon": -123.1669,
+              "depth": 28.5,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 48.2725,
+              "lon": -123.1843,
+              "depth": 32.4,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.1939,
+              "lon": -123.2054,
+              "depth": 34.6,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 48.2437,
+              "lon": -123.3642,
+              "depth": 40.1,
+              "amplitude": 2.7
+            }
+          ]
+        },
+        {
+          "day": 18,
+          "events": [
+            {
+              "lat": 48.2521,
+              "lon": -123.4127,
+              "depth": 33.2,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.3344,
+              "lon": -123.1816,
+              "depth": 33.4,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.285,
+              "lon": -123.3007,
+              "depth": 40.9,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.3459,
+              "lon": -123.2319,
+              "depth": 29.1,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.3502,
+              "lon": -123.2864,
+              "depth": 32.5,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.3179,
+              "lon": -123.3581,
+              "depth": 36.4,
+              "amplitude": 4.0
+            }
+          ]
+        },
+        {
+          "day": 19,
+          "events": [
+            {
+              "lat": 48.3459,
+              "lon": -123.3159,
+              "depth": 38.2,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.3801,
+              "lon": -123.3195,
+              "depth": 37.0,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.2686,
+              "lon": -123.2486,
+              "depth": 33.7,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.4071,
+              "lon": -123.402,
+              "depth": 28.4,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 48.3928,
+              "lon": -123.3185,
+              "depth": 29.8,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 48.3862,
+              "lon": -123.3414,
+              "depth": 41.3,
+              "amplitude": 2.6
+            }
+          ]
+        },
+        {
+          "day": 20,
+          "events": [
+            {
+              "lat": 48.4644,
+              "lon": -123.1654,
+              "depth": 33.2,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.4434,
+              "lon": -123.2912,
+              "depth": 33.6,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 48.3785,
+              "lon": -123.416,
+              "depth": 38.3,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.406,
+              "lon": -123.2815,
+              "depth": 31.7,
+              "amplitude": 3.4
+            }
+          ]
+        },
+        {
+          "day": 21,
+          "events": [
+            {
+              "lat": 48.4429,
+              "lon": -123.2664,
+              "depth": 37.7,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.44,
+              "lon": -123.4093,
+              "depth": 29.0,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.5427,
+              "lon": -123.1508,
+              "depth": 39.3,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.5973,
+              "lon": -123.2496,
+              "depth": 37.9,
+              "amplitude": 4.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ets-2019-11",
+      "label": "Nov 2019 (Oregon)",
+      "startDate": "2019-11-02",
+      "endDate": "2019-11-19",
+      "region": "Oregon",
+      "equivalentMagnitude": 6.3,
+      "totalDays": 18,
+      "frames": [
+        {
+          "day": 0,
+          "events": [
+            {
+              "lat": 44.5783,
+              "lon": -123.6946,
+              "depth": 38.0,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 44.5275,
+              "lon": -123.7119,
+              "depth": 35.1,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 44.4402,
+              "lon": -123.9083,
+              "depth": 39.1,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 44.5108,
+              "lon": -123.8393,
+              "depth": 39.3,
+              "amplitude": 4.4
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "events": [
+            {
+              "lat": 44.6651,
+              "lon": -123.9303,
+              "depth": 33.6,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 44.584,
+              "lon": -123.8268,
+              "depth": 33.7,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 44.5133,
+              "lon": -123.8549,
+              "depth": 29.0,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 44.5917,
+              "lon": -123.9115,
+              "depth": 39.6,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 44.6058,
+              "lon": -123.7197,
+              "depth": 29.8,
+              "amplitude": 4.3
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "events": [
+            {
+              "lat": 44.7427,
+              "lon": -123.7946,
+              "depth": 32.3,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 44.7634,
+              "lon": -123.8824,
+              "depth": 41.3,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 44.6333,
+              "lon": -123.9263,
+              "depth": 30.7,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 44.6314,
+              "lon": -123.7625,
+              "depth": 36.6,
+              "amplitude": 2.8
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "events": [
+            {
+              "lat": 44.6984,
+              "lon": -123.6675,
+              "depth": 30.2,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 44.8088,
+              "lon": -123.7685,
+              "depth": 39.8,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 44.8298,
+              "lon": -123.9415,
+              "depth": 28.6,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 44.7801,
+              "lon": -123.7547,
+              "depth": 38.7,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 44.7925,
+              "lon": -123.8006,
+              "depth": 36.8,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 44.856,
+              "lon": -123.8051,
+              "depth": 39.3,
+              "amplitude": 4.9
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "events": [
+            {
+              "lat": 44.8437,
+              "lon": -123.7434,
+              "depth": 30.2,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 44.8458,
+              "lon": -123.8479,
+              "depth": 30.0,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 44.8168,
+              "lon": -123.6536,
+              "depth": 32.8,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 44.9051,
+              "lon": -123.7955,
+              "depth": 29.5,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 44.7774,
+              "lon": -123.8151,
+              "depth": 30.0,
+              "amplitude": 2.7
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "events": [
+            {
+              "lat": 45.014,
+              "lon": -123.8246,
+              "depth": 41.5,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 45.0039,
+              "lon": -123.6699,
+              "depth": 38.1,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 44.873,
+              "lon": -123.6512,
+              "depth": 34.5,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 44.9407,
+              "lon": -123.923,
+              "depth": 33.5,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 44.8893,
+              "lon": -123.775,
+              "depth": 28.7,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 44.9607,
+              "lon": -123.6971,
+              "depth": 37.4,
+              "amplitude": 3.5
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "events": [
+            {
+              "lat": 45.0988,
+              "lon": -123.8207,
+              "depth": 40.4,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 45.0822,
+              "lon": -123.8402,
+              "depth": 33.6,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 44.9683,
+              "lon": -123.784,
+              "depth": 29.0,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 45.0823,
+              "lon": -123.8661,
+              "depth": 41.8,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 44.9532,
+              "lon": -123.6575,
+              "depth": 33.5,
+              "amplitude": 5.3
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "events": [
+            {
+              "lat": 45.1292,
+              "lon": -123.8403,
+              "depth": 30.0,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 45.0979,
+              "lon": -123.9379,
+              "depth": 28.5,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 45.1784,
+              "lon": -123.7942,
+              "depth": 30.1,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 45.0456,
+              "lon": -123.6706,
+              "depth": 32.5,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 45.1409,
+              "lon": -123.6972,
+              "depth": 36.3,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 45.1196,
+              "lon": -123.803,
+              "depth": 35.9,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "events": [
+            {
+              "lat": 45.1796,
+              "lon": -123.7479,
+              "depth": 41.7,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 45.2652,
+              "lon": -123.7324,
+              "depth": 37.6,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 45.2008,
+              "lon": -123.6599,
+              "depth": 39.0,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 45.2214,
+              "lon": -123.7336,
+              "depth": 36.2,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 45.2317,
+              "lon": -123.7641,
+              "depth": 39.8,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 45.242,
+              "lon": -123.9405,
+              "depth": 41.3,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "events": [
+            {
+              "lat": 45.2823,
+              "lon": -123.8244,
+              "depth": 33.8,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 45.2945,
+              "lon": -123.7666,
+              "depth": 34.6,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 45.3396,
+              "lon": -123.7383,
+              "depth": 35.3,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 45.3937,
+              "lon": -123.8065,
+              "depth": 33.3,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 45.2861,
+              "lon": -123.7901,
+              "depth": 35.6,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 45.3676,
+              "lon": -123.7458,
+              "depth": 39.3,
+              "amplitude": 3.4
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "events": [
+            {
+              "lat": 45.3208,
+              "lon": -123.876,
+              "depth": 35.8,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 45.4769,
+              "lon": -123.8607,
+              "depth": 32.0,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 45.4234,
+              "lon": -123.8549,
+              "depth": 32.9,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 45.4414,
+              "lon": -123.868,
+              "depth": 29.7,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 45.3583,
+              "lon": -123.656,
+              "depth": 39.5,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 45.4433,
+              "lon": -123.8629,
+              "depth": 32.0,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 45.3516,
+              "lon": -123.8173,
+              "depth": 31.6,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "events": [
+            {
+              "lat": 45.5362,
+              "lon": -123.8687,
+              "depth": 35.9,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 45.3924,
+              "lon": -123.7277,
+              "depth": 31.3,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 45.5516,
+              "lon": -123.8823,
+              "depth": 31.3,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 45.4366,
+              "lon": -123.8083,
+              "depth": 37.5,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 45.5635,
+              "lon": -123.6566,
+              "depth": 30.2,
+              "amplitude": 4.8
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "events": [
+            {
+              "lat": 45.5543,
+              "lon": -123.8902,
+              "depth": 41.5,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 45.588,
+              "lon": -123.6776,
+              "depth": 29.3,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 45.5659,
+              "lon": -123.7331,
+              "depth": 41.1,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 45.4938,
+              "lon": -123.6853,
+              "depth": 30.5,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 45.6583,
+              "lon": -123.8309,
+              "depth": 34.9,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 45.6512,
+              "lon": -123.6722,
+              "depth": 40.3,
+              "amplitude": 2.5
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "events": [
+            {
+              "lat": 45.6676,
+              "lon": -123.6715,
+              "depth": 32.7,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 45.6753,
+              "lon": -123.7927,
+              "depth": 40.4,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 45.6479,
+              "lon": -123.8681,
+              "depth": 39.3,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 45.6933,
+              "lon": -123.7555,
+              "depth": 38.1,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 45.6145,
+              "lon": -123.8615,
+              "depth": 37.4,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 45.6692,
+              "lon": -123.7584,
+              "depth": 33.7,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 45.6126,
+              "lon": -123.8298,
+              "depth": 29.3,
+              "amplitude": 5.9
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "events": [
+            {
+              "lat": 45.7,
+              "lon": -123.8756,
+              "depth": 31.7,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 45.786,
+              "lon": -123.6638,
+              "depth": 32.2,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 45.6376,
+              "lon": -123.7539,
+              "depth": 37.7,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 45.6589,
+              "lon": -123.858,
+              "depth": 33.7,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 45.8143,
+              "lon": -123.7389,
+              "depth": 32.4,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "events": [
+            {
+              "lat": 45.797,
+              "lon": -123.8837,
+              "depth": 41.4,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 45.8145,
+              "lon": -123.6533,
+              "depth": 33.2,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 45.9061,
+              "lon": -123.7228,
+              "depth": 39.2,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 45.8759,
+              "lon": -123.7459,
+              "depth": 36.3,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 45.8286,
+              "lon": -123.7915,
+              "depth": 33.1,
+              "amplitude": 5.7
+            }
+          ]
+        },
+        {
+          "day": 16,
+          "events": [
+            {
+              "lat": 45.8241,
+              "lon": -123.7857,
+              "depth": 35.1,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 45.8417,
+              "lon": -123.8516,
+              "depth": 35.3,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 45.8528,
+              "lon": -123.7751,
+              "depth": 29.3,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 45.9735,
+              "lon": -123.814,
+              "depth": 35.2,
+              "amplitude": 4.1
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "events": [
+            {
+              "lat": 46.0118,
+              "lon": -123.7482,
+              "depth": 32.3,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 45.9509,
+              "lon": -123.9491,
+              "depth": 31.1,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 45.9847,
+              "lon": -123.7399,
+              "depth": 35.6,
+              "amplitude": 2.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ets-2018-08",
+      "label": "Aug 2018 (Vancouver Island)",
+      "startDate": "2018-08-12",
+      "endDate": "2018-08-27",
+      "region": "Vancouver Island",
+      "equivalentMagnitude": 6.4,
+      "totalDays": 16,
+      "frames": [
+        {
+          "day": 0,
+          "events": [
+            {
+              "lat": 49.2972,
+              "lon": -123.5084,
+              "depth": 32.0,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 49.1271,
+              "lon": -123.4575,
+              "depth": 38.2,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 49.1749,
+              "lon": -123.3826,
+              "depth": 34.3,
+              "amplitude": 5.7
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "events": [
+            {
+              "lat": 49.0951,
+              "lon": -123.4452,
+              "depth": 37.3,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 49.1507,
+              "lon": -123.5457,
+              "depth": 30.5,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 49.1258,
+              "lon": -123.4316,
+              "depth": 31.1,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 49.0245,
+              "lon": -123.5605,
+              "depth": 37.4,
+              "amplitude": 4.4
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "events": [
+            {
+              "lat": 49.0159,
+              "lon": -123.5811,
+              "depth": 34.4,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 48.9777,
+              "lon": -123.3874,
+              "depth": 38.7,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 49.072,
+              "lon": -123.4655,
+              "depth": 41.1,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.9881,
+              "lon": -123.6298,
+              "depth": 36.3,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 49.0744,
+              "lon": -123.3883,
+              "depth": 31.4,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 49.0278,
+              "lon": -123.4881,
+              "depth": 38.6,
+              "amplitude": 5.2
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "events": [
+            {
+              "lat": 48.9608,
+              "lon": -123.5632,
+              "depth": 39.4,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.9238,
+              "lon": -123.4706,
+              "depth": 37.4,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.9204,
+              "lon": -123.607,
+              "depth": 37.2,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 48.9201,
+              "lon": -123.6317,
+              "depth": 41.3,
+              "amplitude": 5.6
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "events": [
+            {
+              "lat": 48.9052,
+              "lon": -123.5218,
+              "depth": 34.9,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 48.9683,
+              "lon": -123.4486,
+              "depth": 39.0,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 48.8633,
+              "lon": -123.6052,
+              "depth": 33.3,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.8747,
+              "lon": -123.3952,
+              "depth": 32.2,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 48.9412,
+              "lon": -123.3756,
+              "depth": 35.9,
+              "amplitude": 5.9
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "events": [
+            {
+              "lat": 48.806,
+              "lon": -123.5335,
+              "depth": 31.6,
+              "amplitude": 3.7
+            },
+            {
+              "lat": 48.7158,
+              "lon": -123.5151,
+              "depth": 33.2,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.8659,
+              "lon": -123.6345,
+              "depth": 33.3,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.7079,
+              "lon": -123.6282,
+              "depth": 39.3,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.8343,
+              "lon": -123.5849,
+              "depth": 30.9,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.7606,
+              "lon": -123.3773,
+              "depth": 31.0,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 48.8483,
+              "lon": -123.4259,
+              "depth": 38.6,
+              "amplitude": 5.7
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "events": [
+            {
+              "lat": 48.7409,
+              "lon": -123.5886,
+              "depth": 40.8,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.7751,
+              "lon": -123.5358,
+              "depth": 35.5,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 48.6723,
+              "lon": -123.4962,
+              "depth": 35.0,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.8163,
+              "lon": -123.5092,
+              "depth": 39.8,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.6941,
+              "lon": -123.5258,
+              "depth": 35.9,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 48.6492,
+              "lon": -123.5718,
+              "depth": 41.1,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.7035,
+              "lon": -123.6043,
+              "depth": 32.6,
+              "amplitude": 3.8
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "events": [
+            {
+              "lat": 48.6399,
+              "lon": -123.4536,
+              "depth": 37.6,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 48.7043,
+              "lon": -123.36,
+              "depth": 37.0,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.5736,
+              "lon": -123.4115,
+              "depth": 30.4,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 48.6377,
+              "lon": -123.3749,
+              "depth": 35.6,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.5517,
+              "lon": -123.6399,
+              "depth": 39.9,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.6736,
+              "lon": -123.4207,
+              "depth": 33.8,
+              "amplitude": 5.4
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "events": [
+            {
+              "lat": 48.4736,
+              "lon": -123.6047,
+              "depth": 31.1,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.4721,
+              "lon": -123.4587,
+              "depth": 41.1,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.5919,
+              "lon": -123.6453,
+              "depth": 35.5,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.4633,
+              "lon": -123.4333,
+              "depth": 35.5,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 48.5604,
+              "lon": -123.4406,
+              "depth": 34.0,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.4959,
+              "lon": -123.3746,
+              "depth": 35.3,
+              "amplitude": 3.3
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "events": [
+            {
+              "lat": 48.4853,
+              "lon": -123.4054,
+              "depth": 31.7,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.4546,
+              "lon": -123.5282,
+              "depth": 35.9,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.4252,
+              "lon": -123.4448,
+              "depth": 39.9,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 48.5516,
+              "lon": -123.4221,
+              "depth": 29.3,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 48.4905,
+              "lon": -123.6332,
+              "depth": 28.1,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.48,
+              "lon": -123.5198,
+              "depth": 39.0,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.5516,
+              "lon": -123.6214,
+              "depth": 35.4,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 48.4223,
+              "lon": -123.3896,
+              "depth": 40.4,
+              "amplitude": 4.2
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "events": [
+            {
+              "lat": 48.4848,
+              "lon": -123.4447,
+              "depth": 31.9,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.4316,
+              "lon": -123.5962,
+              "depth": 39.9,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 48.3414,
+              "lon": -123.6067,
+              "depth": 39.5,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.4858,
+              "lon": -123.5602,
+              "depth": 35.9,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.4699,
+              "lon": -123.4469,
+              "depth": 35.6,
+              "amplitude": 3.8
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "events": [
+            {
+              "lat": 48.248,
+              "lon": -123.3535,
+              "depth": 38.1,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.4149,
+              "lon": -123.6339,
+              "depth": 34.1,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.2881,
+              "lon": -123.4193,
+              "depth": 41.4,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.3747,
+              "lon": -123.6411,
+              "depth": 31.8,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.3181,
+              "lon": -123.5433,
+              "depth": 41.2,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.3559,
+              "lon": -123.4518,
+              "depth": 29.2,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.3796,
+              "lon": -123.4361,
+              "depth": 29.1,
+              "amplitude": 3.0
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "events": [
+            {
+              "lat": 48.2968,
+              "lon": -123.6037,
+              "depth": 33.5,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 48.1583,
+              "lon": -123.3671,
+              "depth": 34.2,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.1604,
+              "lon": -123.6238,
+              "depth": 34.0,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.2425,
+              "lon": -123.619,
+              "depth": 29.3,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.2594,
+              "lon": -123.4147,
+              "depth": 40.1,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 48.2228,
+              "lon": -123.4162,
+              "depth": 38.1,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.3385,
+              "lon": -123.5772,
+              "depth": 35.3,
+              "amplitude": 4.9
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "events": [
+            {
+              "lat": 48.0878,
+              "lon": -123.5597,
+              "depth": 34.9,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 48.1469,
+              "lon": -123.5237,
+              "depth": 34.8,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.1103,
+              "lon": -123.576,
+              "depth": 36.8,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.0991,
+              "lon": -123.6179,
+              "depth": 32.3,
+              "amplitude": 5.8
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "events": [
+            {
+              "lat": 48.1483,
+              "lon": -123.536,
+              "depth": 40.1,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.0661,
+              "lon": -123.4029,
+              "depth": 37.1,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 48.0401,
+              "lon": -123.469,
+              "depth": 37.7,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.0155,
+              "lon": -123.5305,
+              "depth": 32.5,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.1066,
+              "lon": -123.3597,
+              "depth": 38.9,
+              "amplitude": 3.6
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "events": [
+            {
+              "lat": 48.0633,
+              "lon": -123.5321,
+              "depth": 29.6,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.0184,
+              "lon": -123.4863,
+              "depth": 37.5,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 48.0906,
+              "lon": -123.5115,
+              "depth": 37.9,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 47.9583,
+              "lon": -123.4421,
+              "depth": 39.5,
+              "amplitude": 5.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ets-2017-04",
+      "label": "Apr 2017 (Washington)",
+      "startDate": "2017-04-08",
+      "endDate": "2017-04-28",
+      "region": "Washington",
+      "equivalentMagnitude": 6.6,
+      "totalDays": 21,
+      "frames": [
+        {
+          "day": 0,
+          "events": [
+            {
+              "lat": 48.8346,
+              "lon": -123.5082,
+              "depth": 32.2,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 48.7308,
+              "lon": -123.4231,
+              "depth": 33.3,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.8196,
+              "lon": -123.3753,
+              "depth": 35.5,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.8739,
+              "lon": -123.4245,
+              "depth": 28.5,
+              "amplitude": 5.9
+            }
+          ]
+        },
+        {
+          "day": 1,
+          "events": [
+            {
+              "lat": 48.7991,
+              "lon": -123.3889,
+              "depth": 36.9,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.7738,
+              "lon": -123.3527,
+              "depth": 33.0,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 48.6289,
+              "lon": -123.2549,
+              "depth": 37.5,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.7705,
+              "lon": -123.2603,
+              "depth": 34.0,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 48.6717,
+              "lon": -123.3968,
+              "depth": 35.3,
+              "amplitude": 4.5
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "events": [
+            {
+              "lat": 48.5842,
+              "lon": -123.4378,
+              "depth": 34.5,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 48.6781,
+              "lon": -123.5048,
+              "depth": 42.0,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.5991,
+              "lon": -123.2738,
+              "depth": 29.2,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 48.686,
+              "lon": -123.4455,
+              "depth": 32.8,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.6442,
+              "lon": -123.4455,
+              "depth": 29.4,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 48.6305,
+              "lon": -123.5298,
+              "depth": 28.6,
+              "amplitude": 5.0
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "events": [
+            {
+              "lat": 48.6298,
+              "lon": -123.3556,
+              "depth": 37.5,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.6568,
+              "lon": -123.4768,
+              "depth": 30.4,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.572,
+              "lon": -123.2625,
+              "depth": 31.2,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.4969,
+              "lon": -123.3579,
+              "depth": 34.0,
+              "amplitude": 2.6
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "events": [
+            {
+              "lat": 48.5566,
+              "lon": -123.4151,
+              "depth": 34.0,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 48.423,
+              "lon": -123.4665,
+              "depth": 37.9,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.4955,
+              "lon": -123.3101,
+              "depth": 35.5,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 48.4194,
+              "lon": -123.5158,
+              "depth": 37.4,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.5732,
+              "lon": -123.456,
+              "depth": 33.4,
+              "amplitude": 3.9
+            },
+            {
+              "lat": 48.4028,
+              "lon": -123.4444,
+              "depth": 34.4,
+              "amplitude": 3.1
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "events": [
+            {
+              "lat": 48.4412,
+              "lon": -123.4608,
+              "depth": 36.6,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 48.3268,
+              "lon": -123.5146,
+              "depth": 32.3,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.4387,
+              "lon": -123.3968,
+              "depth": 33.9,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 48.3767,
+              "lon": -123.4943,
+              "depth": 36.9,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 48.4291,
+              "lon": -123.25,
+              "depth": 35.8,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.3281,
+              "lon": -123.4556,
+              "depth": 34.3,
+              "amplitude": 2.7
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "events": [
+            {
+              "lat": 48.4104,
+              "lon": -123.4046,
+              "depth": 30.7,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 48.3323,
+              "lon": -123.3541,
+              "depth": 33.7,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.362,
+              "lon": -123.4168,
+              "depth": 30.3,
+              "amplitude": 4.5
+            },
+            {
+              "lat": 48.3792,
+              "lon": -123.4838,
+              "depth": 28.5,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 48.2777,
+              "lon": -123.3158,
+              "depth": 35.9,
+              "amplitude": 5.2
+            },
+            {
+              "lat": 48.3191,
+              "lon": -123.3968,
+              "depth": 36.0,
+              "amplitude": 3.4
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "events": [
+            {
+              "lat": 48.3047,
+              "lon": -123.4399,
+              "depth": 39.5,
+              "amplitude": 2.6
+            },
+            {
+              "lat": 48.2838,
+              "lon": -123.3861,
+              "depth": 41.9,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 48.306,
+              "lon": -123.3246,
+              "depth": 32.2,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 48.2299,
+              "lon": -123.4454,
+              "depth": 39.4,
+              "amplitude": 4.0
+            },
+            {
+              "lat": 48.3388,
+              "lon": -123.3173,
+              "depth": 31.3,
+              "amplitude": 5.3
+            },
+            {
+              "lat": 48.2576,
+              "lon": -123.4448,
+              "depth": 38.0,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 48.1732,
+              "lon": -123.5082,
+              "depth": 30.9,
+              "amplitude": 3.2
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "events": [
+            {
+              "lat": 48.174,
+              "lon": -123.3903,
+              "depth": 36.4,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 48.2558,
+              "lon": -123.4622,
+              "depth": 36.0,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.1629,
+              "lon": -123.28,
+              "depth": 39.4,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 48.21,
+              "lon": -123.4265,
+              "depth": 28.8,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 48.1912,
+              "lon": -123.3396,
+              "depth": 29.9,
+              "amplitude": 3.0
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "events": [
+            {
+              "lat": 48.1457,
+              "lon": -123.3216,
+              "depth": 37.5,
+              "amplitude": 4.2
+            },
+            {
+              "lat": 48.0955,
+              "lon": -123.4694,
+              "depth": 33.8,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.1067,
+              "lon": -123.286,
+              "depth": 29.3,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 48.0356,
+              "lon": -123.2691,
+              "depth": 33.2,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 48.0455,
+              "lon": -123.5493,
+              "depth": 38.8,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 48.1262,
+              "lon": -123.4125,
+              "depth": 37.3,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 47.9927,
+              "lon": -123.3897,
+              "depth": 31.0,
+              "amplitude": 4.0
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "events": [
+            {
+              "lat": 47.9989,
+              "lon": -123.4531,
+              "depth": 32.0,
+              "amplitude": 4.4
+            },
+            {
+              "lat": 47.9261,
+              "lon": -123.2943,
+              "depth": 39.0,
+              "amplitude": 5.6
+            },
+            {
+              "lat": 48.0525,
+              "lon": -123.5362,
+              "depth": 36.8,
+              "amplitude": 5.4
+            },
+            {
+              "lat": 47.9033,
+              "lon": -123.2712,
+              "depth": 30.2,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 48.0984,
+              "lon": -123.4217,
+              "depth": 41.9,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 48.0764,
+              "lon": -123.4594,
+              "depth": 40.2,
+              "amplitude": 5.6
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "events": [
+            {
+              "lat": 47.9509,
+              "lon": -123.4749,
+              "depth": 33.2,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.8531,
+              "lon": -123.4311,
+              "depth": 32.3,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.8668,
+              "lon": -123.3534,
+              "depth": 37.9,
+              "amplitude": 2.5
+            },
+            {
+              "lat": 47.9154,
+              "lon": -123.5102,
+              "depth": 31.2,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.8219,
+              "lon": -123.3413,
+              "depth": 39.4,
+              "amplitude": 6.0
+            },
+            {
+              "lat": 47.9045,
+              "lon": -123.5103,
+              "depth": 29.0,
+              "amplitude": 3.8
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "events": [
+            {
+              "lat": 47.9012,
+              "lon": -123.519,
+              "depth": 33.1,
+              "amplitude": 3.5
+            },
+            {
+              "lat": 47.8165,
+              "lon": -123.306,
+              "depth": 40.2,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 47.8754,
+              "lon": -123.5295,
+              "depth": 35.9,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.7728,
+              "lon": -123.4446,
+              "depth": 31.0,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.924,
+              "lon": -123.3652,
+              "depth": 34.2,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.9193,
+              "lon": -123.508,
+              "depth": 29.7,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.8103,
+              "lon": -123.4212,
+              "depth": 39.1,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 47.8689,
+              "lon": -123.4755,
+              "depth": 36.4,
+              "amplitude": 5.0
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "events": [
+            {
+              "lat": 47.8158,
+              "lon": -123.3429,
+              "depth": 39.9,
+              "amplitude": 4.8
+            },
+            {
+              "lat": 47.7203,
+              "lon": -123.3947,
+              "depth": 35.1,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.7191,
+              "lon": -123.5336,
+              "depth": 40.6,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.759,
+              "lon": -123.5162,
+              "depth": 35.0,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.7657,
+              "lon": -123.2567,
+              "depth": 41.8,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.6864,
+              "lon": -123.2918,
+              "depth": 36.0,
+              "amplitude": 3.8
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "events": [
+            {
+              "lat": 47.6146,
+              "lon": -123.4087,
+              "depth": 41.8,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.6975,
+              "lon": -123.5459,
+              "depth": 31.0,
+              "amplitude": 5.7
+            },
+            {
+              "lat": 47.7697,
+              "lon": -123.4306,
+              "depth": 32.0,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 47.7334,
+              "lon": -123.4229,
+              "depth": 33.6,
+              "amplitude": 4.7
+            },
+            {
+              "lat": 47.6875,
+              "lon": -123.5042,
+              "depth": 29.2,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.7642,
+              "lon": -123.2577,
+              "depth": 30.2,
+              "amplitude": 3.6
+            },
+            {
+              "lat": 47.6973,
+              "lon": -123.321,
+              "depth": 37.1,
+              "amplitude": 4.8
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "events": [
+            {
+              "lat": 47.6397,
+              "lon": -123.331,
+              "depth": 39.9,
+              "amplitude": 2.7
+            },
+            {
+              "lat": 47.5172,
+              "lon": -123.4197,
+              "depth": 34.3,
+              "amplitude": 4.6
+            },
+            {
+              "lat": 47.5619,
+              "lon": -123.3275,
+              "depth": 38.4,
+              "amplitude": 2.9
+            },
+            {
+              "lat": 47.6416,
+              "lon": -123.3396,
+              "depth": 30.3,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.6046,
+              "lon": -123.3151,
+              "depth": 38.1,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.5254,
+              "lon": -123.3157,
+              "depth": 31.8,
+              "amplitude": 5.6
+            }
+          ]
+        },
+        {
+          "day": 16,
+          "events": [
+            {
+              "lat": 47.487,
+              "lon": -123.4212,
+              "depth": 35.3,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 47.615,
+              "lon": -123.3617,
+              "depth": 34.9,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.4311,
+              "lon": -123.2922,
+              "depth": 30.3,
+              "amplitude": 3.1
+            },
+            {
+              "lat": 47.5747,
+              "lon": -123.2817,
+              "depth": 37.4,
+              "amplitude": 2.9
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "events": [
+            {
+              "lat": 47.4418,
+              "lon": -123.5368,
+              "depth": 40.1,
+              "amplitude": 3.4
+            },
+            {
+              "lat": 47.4344,
+              "lon": -123.4351,
+              "depth": 30.1,
+              "amplitude": 5.8
+            },
+            {
+              "lat": 47.5115,
+              "lon": -123.3841,
+              "depth": 40.8,
+              "amplitude": 5.1
+            },
+            {
+              "lat": 47.4239,
+              "lon": -123.4535,
+              "depth": 33.8,
+              "amplitude": 5.0
+            },
+            {
+              "lat": 47.3943,
+              "lon": -123.5266,
+              "depth": 33.2,
+              "amplitude": 4.3
+            },
+            {
+              "lat": 47.5204,
+              "lon": -123.4962,
+              "depth": 39.3,
+              "amplitude": 5.9
+            }
+          ]
+        },
+        {
+          "day": 18,
+          "events": [
+            {
+              "lat": 47.2738,
+              "lon": -123.4105,
+              "depth": 32.0,
+              "amplitude": 5.5
+            },
+            {
+              "lat": 47.3255,
+              "lon": -123.3841,
+              "depth": 28.1,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 47.3728,
+              "lon": -123.4588,
+              "depth": 36.7,
+              "amplitude": 4.1
+            },
+            {
+              "lat": 47.3783,
+              "lon": -123.402,
+              "depth": 38.8,
+              "amplitude": 3.2
+            },
+            {
+              "lat": 47.4401,
+              "lon": -123.3219,
+              "depth": 31.4,
+              "amplitude": 2.5
+            }
+          ]
+        },
+        {
+          "day": 19,
+          "events": [
+            {
+              "lat": 47.1848,
+              "lon": -123.3875,
+              "depth": 36.9,
+              "amplitude": 4.9
+            },
+            {
+              "lat": 47.1819,
+              "lon": -123.4495,
+              "depth": 38.6,
+              "amplitude": 3.8
+            },
+            {
+              "lat": 47.3276,
+              "lon": -123.4577,
+              "depth": 30.9,
+              "amplitude": 5.9
+            },
+            {
+              "lat": 47.264,
+              "lon": -123.2616,
+              "depth": 41.6,
+              "amplitude": 3.0
+            },
+            {
+              "lat": 47.236,
+              "lon": -123.5368,
+              "depth": 31.2,
+              "amplitude": 5.5
+            }
+          ]
+        },
+        {
+          "day": 20,
+          "events": [
+            {
+              "lat": 47.2402,
+              "lon": -123.4383,
+              "depth": 41.6,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.1191,
+              "lon": -123.5099,
+              "depth": 39.5,
+              "amplitude": 2.8
+            },
+            {
+              "lat": 47.2136,
+              "lon": -123.4195,
+              "depth": 41.5,
+              "amplitude": 3.3
+            },
+            {
+              "lat": 47.1522,
+              "lon": -123.4555,
+              "depth": 39.2,
+              "amplitude": 5.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

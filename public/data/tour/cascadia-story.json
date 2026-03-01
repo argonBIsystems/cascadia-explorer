@@ -1,0 +1,77 @@
+{
+  "title": "The Story of Cascadia",
+  "stops": [
+    {
+      "id": "overview",
+      "title": "The Cascadia Subduction Zone",
+      "narration": "Off the coast of the Pacific Northwest, the Juan de Fuca plate is diving beneath North America at roughly 40 mm per year. This 1,100 km long boundary \u2014 from Cape Mendocino to Vancouver Island \u2014 is one of Earth's most dangerous seismic zones.",
+      "camera": { "lat": 45, "lon": -128, "height": 2000000, "heading": 0, "pitch": -45 },
+      "layers": ["faults"],
+      "duration": 8000
+    },
+    {
+      "id": "slab",
+      "title": "The Diving Plate",
+      "narration": "Seismic data reveals the subducting slab's geometry. It descends gently at first, then steepens to nearly 45 degrees as it plunges toward the mantle. This slab geometry controls where earthquakes occur and where magma rises to feed the Cascade volcanoes.",
+      "camera": { "lat": 46, "lon": -122, "height": 500000, "heading": -30, "pitch": -30 },
+      "layers": ["slab", "faults"],
+      "duration": 8000
+    },
+    {
+      "id": "volcanoes",
+      "title": "Ring of Fire",
+      "narration": "The Cascade volcanic arc sits directly above where the slab reaches 80\u2013100 km depth \u2014 the depth at which dehydration melting produces magma. Mount Rainier, St. Helens, Hood, and Baker are all products of this process.",
+      "camera": { "lat": 46.2, "lon": -122.2, "height": 600000, "heading": 0, "pitch": -35 },
+      "layers": ["slab", "volcanoes"],
+      "duration": 8000
+    },
+    {
+      "id": "locking",
+      "title": "Locked and Loading",
+      "narration": "GPS stations across the Pacific Northwest show the continent being compressed eastward \u2014 pushed by the diving plate. Where the fault is fully locked (shown in red), strain accumulates year after year. When it releases, the result is a magnitude 9 earthquake.",
+      "camera": { "lat": 47, "lon": -123, "height": 800000, "heading": 0, "pitch": -30 },
+      "layers": ["gps", "coupling"],
+      "duration": 10000
+    },
+    {
+      "id": "fragmentation",
+      "title": "A Plate Tearing Apart",
+      "narration": "The Juan de Fuca plate isn't monolithic \u2014 it's fragmenting. A 35 km fracture has been discovered in the Explorer segment, and a new 'incipient tear' is forming further south. This gradual disintegration has been occurring for millions of years.",
+      "camera": { "lat": 49.2, "lon": -129, "height": 300000, "heading": 30, "pitch": -25 },
+      "layers": ["annotations"],
+      "duration": 8000
+    },
+    {
+      "id": "pioneer",
+      "title": "The Lost Plate Fragment",
+      "narration": "In 2026, scientists discovered a hidden fragment of an ancient plate still moving beneath Northern California \u2014 right where the San Andreas Fault meets Cascadia. This 'Pioneer Fragment' suggests the two fault systems may be seismically coupled.",
+      "camera": { "lat": 40.3, "lon": -124.2, "height": 200000, "heading": 0, "pitch": -20 },
+      "layers": ["pioneer", "annotations"],
+      "duration": 10000
+    },
+    {
+      "id": "scenario",
+      "title": "When It Breaks",
+      "narration": "Computer simulations of a magnitude 9.0 Cascadia earthquake show violent shaking across the entire Pacific Northwest. The USGS has modeled 30 different rupture scenarios \u2014 each producing different patterns of devastation.",
+      "camera": { "lat": 45, "lon": -122, "height": 1500000, "heading": 0, "pitch": -45 },
+      "layers": ["scenarios"],
+      "duration": 8000
+    },
+    {
+      "id": "tsunami",
+      "title": "The Wave That Follows",
+      "narration": "Within minutes of the earthquake, a tsunami would race across the Pacific. Coastal communities from Vancouver Island to Northern California could see waves exceeding 10 meters. The last time this happened was January 26, 1700.",
+      "camera": { "lat": 45, "lon": -130, "height": 2000000, "heading": 0, "pitch": -45 },
+      "layers": ["tsunami"],
+      "duration": 10000
+    },
+    {
+      "id": "monitoring",
+      "title": "Watching and Waiting",
+      "narration": "A growing network of sensors \u2014 from seafloor observatories to GPS stations to DART buoys \u2014 monitors the subduction zone around the clock. But the vast majority of the locked fault lies offshore, beyond our best instruments. We know it will happen. We just don't know when.",
+      "camera": { "lat": 46, "lon": -128, "height": 1200000, "heading": 0, "pitch": -30 },
+      "layers": ["sensors", "earthquakes"],
+      "duration": 10000
+    }
+  ]
+}

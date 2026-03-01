@@ -2,16 +2,16 @@
   {
     "id": "pioneer-fragment",
     "title": "Pioneer Fragment",
-    "subtitle": "Orphaned slab fragment beneath Oregon",
-    "description": "A detached piece of the Farallon plate discovered beneath central Oregon at ~200-400 km depth. This 'orphan' fragment provides evidence that slab tearing has shaped the subduction zone's geometry over millions of years.",
-    "latitude": 44.5,
-    "longitude": -121.5,
-    "depth": 300,
-    "category": "slab-tear",
+    "subtitle": "Captured slab fragment at the Mendocino Triple Junction",
+    "description": "A captured fragment of the ancient Farallon plate, discovered sliding northward beneath North America at the junction where the San Andreas and Cascadia faults meet. Low-frequency earthquakes (LFEs) track its motion via dipping, strike-slip faulting. This extends the slab interface beyond where models currently end, challenging prevailing slab window theories and suggesting coupled seismic hazard between Cascadia and San Andreas.",
+    "latitude": 40.3,
+    "longitude": -124.2,
+    "depth": 25,
+    "category": "slab-fragment",
     "paper": {
-      "title": "Rayleigh wave tomography of the Cascadia subduction zone",
-      "authors": "Hawley et al., 2016",
-      "url": "https://doi.org/10.1002/2016JB013350"
+      "title": "Low-frequency earthquakes track the motion of a captured slab fragment",
+      "authors": "Shelly, 2026",
+      "url": "https://www.science.org/doi/10.1126/science.aeb2407"
     }
   },
   {
@@ -102,6 +102,66 @@
       "title": "Along-strike variations in fault frictional properties along the Blanco Transform Fault",
       "authors": "Braunmiller & Nabelek, 2008",
       "url": "https://doi.org/10.1016/j.tecto.2008.05.018"
+    }
+  },
+  {
+    "id": "explorer-slab-tear",
+    "title": "Explorer Plate Slab Tear",
+    "subtitle": "35 km fracture in the descending Explorer slab",
+    "description": "The 2021 CASIE21 seismic imaging experiment revealed a 35 km long, nearly vertical fracture in the descending Explorer slab with >3 km of vertical offset. The tear is mature, active, and deepening. Methane vents at Maquinna Mound mark where fluids escape along the fault plane. Earthquakes from the past decade (including the M6.6 in 2014) align precisely along the tear.",
+    "latitude": 49.2,
+    "longitude": -129.5,
+    "depth": 50,
+    "category": "slab-tear",
+    "paper": {
+      "title": "Slab tearing and segmented subduction termination driven by transform tectonics",
+      "authors": "Shuck et al., 2025",
+      "url": "https://www.science.org/doi/10.1126/sciadv.adq7650"
+    }
+  },
+  {
+    "id": "jdf-early-tear",
+    "title": "Juan de Fuca Early-Stage Tear",
+    "subtitle": "Incipient slab tear south of the Nootka Fault",
+    "description": "CASIE21 imaging also revealed a broad buckle in the Juan de Fuca slab adjacent to the Explorer tear — interpreted as an early-stage tear that will eventually develop into a sharp fracture like the Explorer tear. This shows the plate is fragmenting gradually over millions of years, not catastrophically.",
+    "latitude": 48.8,
+    "longitude": -128.5,
+    "depth": 60,
+    "category": "slab-tear",
+    "paper": {
+      "title": "Slab tearing and segmented subduction termination driven by transform tectonics",
+      "authors": "Shuck et al., 2025",
+      "url": "https://www.science.org/doi/10.1126/sciadv.adq7650"
+    }
+  },
+  {
+    "id": "mendocino-crustal-conveyor",
+    "title": "Mendocino Crustal Conveyor",
+    "subtitle": "Slab window process beneath Northern California",
+    "description": "3D seismic tomography reveals a 'crustal conveyor' process at the Mendocino Triple Junction where the Pioneer Fragment creates a slab window. This accounts for a chain of volcanic features running from the Bay Area northward to Clear Lake and The Geysers geothermal field.",
+    "latitude": 39.0,
+    "longitude": -122.8,
+    "depth": 60,
+    "category": "slab-fragment",
+    "paper": {
+      "title": "Formation and Evolution of the Pacific-North American Plate Boundary",
+      "authors": "Furlong, 2024",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023TC007963"
+    }
+  },
+  {
+    "id": "maquinna-mound",
+    "title": "Maquinna Mound Methane Vents",
+    "subtitle": "Fluid escape along Explorer slab tear",
+    "description": "Active methane venting at Maquinna Mound marks where fluids escape along the Explorer slab tear fault plane. These vents provide surface evidence of the deep fracturing process and demonstrate how slab tearing creates conduits for fluid migration from the subducting plate.",
+    "latitude": 49.08,
+    "longitude": -129.17,
+    "depth": 5,
+    "category": "fluid-pathway",
+    "paper": {
+      "title": "Slab tearing and segmented subduction termination driven by transform tectonics",
+      "authors": "Shuck et al., 2025",
+      "url": "https://www.science.org/doi/10.1126/sciadv.adq7650"
     }
   }
 ]

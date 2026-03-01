@@ -1,5 +1,6 @@
 import { useAppStore } from '../../store/useAppStore';
 import Toggle from '../ui/Toggle';
+import DrawerOverlay from '../ui/DrawerOverlay';
 import type { LayerId, ReferenceFrame } from '../../types';
 
 interface LayerRow {
@@ -17,6 +18,13 @@ const LAYERS: LayerRow[] = [
   { id: 'scenarios', label: 'M9 Scenarios', badge: 'MODEL' },
   { id: 'tsunami', label: 'Tsunami', badge: 'MODEL' },
   { id: 'annotations', label: 'Discoveries' },
+  { id: 'volcanoes', label: 'Volcanoes', badge: 'LIVE' },
+  { id: 'coupling', label: 'Fault Locking', badge: 'MODEL' },
+  { id: 'pioneer', label: 'Pioneer Fragment', badge: 'NEW' },
+  { id: 'paleoseismic', label: 'Paleoseismic', badge: 'DATA' },
+  { id: 'sensors', label: 'Offshore Sensors' },
+  { id: 'tremor', label: 'ETS Tremor', badge: 'MODEL' },
+  { id: 'hazard', label: 'Seismic Hazard', badge: 'NSHM' },
 ];
 
 export default function LayerPanel() {
@@ -24,16 +32,12 @@ export default function LayerPanel() {
   const toggleLayer = useAppStore((s) => s.toggleLayer);
   const referenceFrame = useAppStore((s) => s.referenceFrame);
   const setReferenceFrame = useAppStore((s) => s.setReferenceFrame);
+  const isMobile = useAppStore((s) => s.isMobile);
+  const activeDrawer = useAppStore((s) => s.activeDrawer);
+  const setActiveDrawer = useAppStore((s) => s.setActiveDrawer);
 
-  return (
-    <aside
-      className="
-        fixed left-4 top-[72px] bottom-[80px] w-60 z-40
-        bg-[#0c1222]/[0.92] backdrop-blur-xl
-        border border-white/[0.18] rounded-2xl
-        p-4 flex flex-col
-      "
-    >
+  const content = (
+    <>
       {/* Header */}
       <h2
         className="text-slate-100 mb-3"
@@ -93,6 +97,33 @@ export default function LayerPanel() {
           );
         })}
       </div>
+    </>
+  );
+
+  if (isMobile) {
+    return (
+      <DrawerOverlay
+        open={activeDrawer === 'layers'}
+        side="left"
+        onClose={() => setActiveDrawer(null)}
+      >
+        <div className="p-4 pt-14">
+          {content}
+        </div>
+      </DrawerOverlay>
+    );
+  }
+
+  return (
+    <aside
+      className="
+        fixed left-4 top-[72px] bottom-[80px] w-60 z-40
+        bg-[#0c1222]/[0.92] backdrop-blur-xl
+        border border-white/[0.18] rounded-2xl
+        p-4 flex flex-col
+      "
+    >
+      {content}
     </aside>
   );
 }

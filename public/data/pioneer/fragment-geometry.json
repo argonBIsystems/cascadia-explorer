@@ -1,0 +1,45 @@
+{
+  "name": "Pioneer Fragment",
+  "description": "Captured remnant of the Farallon plate at the Mendocino Triple Junction",
+  "reference": "Shelly (2026), Science 391, 294-299",
+  "outline": {
+    "type": "Polygon",
+    "coordinates": [
+      [-125.0, 39.5], [-124.0, 39.5], [-123.5, 40.0],
+      [-123.8, 40.8], [-124.5, 41.0], [-125.0, 40.5], [-125.0, 39.5]
+    ]
+  },
+  "depth_range_km": [15, 40],
+  "motion": {
+    "direction_deg": 350,
+    "rate_mm_yr": 15,
+    "description": "Northward, beneath North America"
+  },
+  "lfe_events": [
+    { "lat": 40.15, "lon": -124.10, "depth": 22, "magnitude": 1.2 },
+    { "lat": 40.20, "lon": -124.15, "depth": 24, "magnitude": 1.0 },
+    { "lat": 40.25, "lon": -124.20, "depth": 26, "magnitude": 1.4 },
+    { "lat": 40.30, "lon": -124.25, "depth": 28, "magnitude": 1.1 },
+    { "lat": 40.35, "lon": -124.30, "depth": 30, "magnitude": 1.3 },
+    { "lat": 40.18, "lon": -124.05, "depth": 20, "magnitude": 0.9 },
+    { "lat": 40.22, "lon": -124.12, "depth": 23, "magnitude": 1.1 },
+    { "lat": 40.28, "lon": -124.18, "depth": 25, "magnitude": 1.5 },
+    { "lat": 40.32, "lon": -124.22, "depth": 27, "magnitude": 1.0 },
+    { "lat": 40.38, "lon": -124.28, "depth": 29, "magnitude": 1.2 },
+    { "lat": 40.12, "lon": -124.08, "depth": 21, "magnitude": 0.8 },
+    { "lat": 40.16, "lon": -124.13, "depth": 23, "magnitude": 1.3 },
+    { "lat": 40.24, "lon": -124.22, "depth": 26, "magnitude": 1.1 },
+    { "lat": 40.33, "lon": -124.30, "depth": 30, "magnitude": 0.7 },
+    { "lat": 40.40, "lon": -124.35, "depth": 32, "magnitude": 1.4 },
+    { "lat": 40.10, "lon": -124.02, "depth": 19, "magnitude": 1.0 },
+    { "lat": 40.27, "lon": -124.16, "depth": 25, "magnitude": 1.2 },
+    { "lat": 40.34, "lon": -124.27, "depth": 29, "magnitude": 1.6 },
+    { "lat": 40.42, "lon": -124.33, "depth": 33, "magnitude": 1.1 },
+    { "lat": 40.08, "lon": -123.98, "depth": 18, "magnitude": 0.9 }
+  ],
+  "connection_to_cascadia": {
+    "start": { "lat": 41.0, "lon": -124.5 },
+    "end": { "lat": 42.0, "lon": -124.8 },
+    "description": "Junction between Pioneer Fragment and Cascadia slab"
+  }
+}

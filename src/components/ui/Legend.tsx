@@ -25,6 +25,7 @@ const FAULT_TYPES = [
 
 export default function Legend() {
   const layers = useAppStore((s) => s.layers);
+  const isMobile = useAppStore((s) => s.isMobile);
 
   const showEarthquakes = layers.earthquakes.visible;
   const showSlab = layers.slab.visible;
@@ -32,14 +33,24 @@ export default function Legend() {
   const showGPS = layers.gps.visible;
   const showScenarios = layers.scenarios.visible;
   const showTsunami = layers.tsunami.visible;
+  const showVolcanoes = layers.volcanoes.visible;
+  const showCoupling = layers.coupling.visible;
+  const showPioneer = layers.pioneer.visible;
+  const showSensors = layers.sensors.visible;
+  const showTremor = layers.tremor.visible;
+  const showHazard = layers.hazard.visible;
 
-  if (!showEarthquakes && !showSlab && !showFaults && !showGPS && !showScenarios && !showTsunami) return null;
+  if (!showEarthquakes && !showSlab && !showFaults && !showGPS && !showScenarios && !showTsunami && !showVolcanoes && !showCoupling && !showPioneer && !showSensors && !showTremor && !showHazard) return null;
 
   return (
-    <div className="fixed bottom-4 left-[17.5rem] z-30 flex flex-col gap-3 max-w-[180px] max-h-[calc(100vh-200px)] overflow-y-auto">
+    <div className={`fixed z-30 flex max-h-[calc(100vh-200px)] overflow-y-auto ${
+      isMobile
+        ? 'bottom-[68px] left-2 right-2 flex-row gap-2 overflow-x-auto max-w-none'
+        : 'bottom-4 left-[17.5rem] flex-col gap-3 max-w-[180px]'
+    }`}>
       {/* Depth color scale — shown for earthquakes or slab */}
       {(showEarthquakes || showSlab) && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3">
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
           <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
             Depth
           </div>
@@ -62,7 +73,7 @@ export default function Legend() {
 
       {/* Magnitude scale */}
       {showEarthquakes && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3">
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
           <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
             Magnitude
           </div>
@@ -84,7 +95,7 @@ export default function Legend() {
 
       {/* Fault type legend */}
       {showFaults && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3">
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
           <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
             Boundaries
           </div>
@@ -107,7 +118,7 @@ export default function Legend() {
       )}
       {/* GPS velocity legend */}
       {showGPS && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3">
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
           <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
             GPS Velocity
           </div>
@@ -129,7 +140,7 @@ export default function Legend() {
 
       {/* MMI legend for scenarios */}
       {showScenarios && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3">
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
           <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
             Shaking (MMI)
           </div>
@@ -151,9 +162,141 @@ export default function Legend() {
         </div>
       )}
 
+      {/* Volcano alert legend */}
+      {showVolcanoes && (
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
+          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
+            Volcano Alert
+          </div>
+          <div className="flex flex-col gap-1">
+            {[
+              { color: '#22c55e', label: 'Normal' },
+              { color: '#eab308', label: 'Advisory' },
+              { color: '#f97316', label: 'Watch' },
+              { color: '#ef4444', label: 'Warning' },
+            ].map((v) => (
+              <div key={v.label} className="flex items-center gap-2">
+                <svg width="12" height="12" viewBox="0 0 12 12">
+                  <polygon points="6,1 11,11 1,11" fill={v.color} />
+                </svg>
+                <span className="text-[10px] text-slate-400">{v.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Coupling legend */}
+      {showCoupling && (
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
+          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
+            Fault Locking
+          </div>
+          <div className="flex flex-col gap-0.5">
+            {[
+              { color: '#3b82f6', label: 'Creeping' },
+              { color: '#a78bfa', label: 'Partial' },
+              { color: '#f59e0b', label: 'Mostly Locked' },
+              { color: '#ef4444', label: 'Fully Locked' },
+            ].map((c) => (
+              <div key={c.label} className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: c.color, opacity: 0.7 }} />
+                <span className="text-[10px] text-slate-400">{c.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Pioneer Fragment legend */}
+      {showPioneer && (
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
+          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
+            Pioneer Fragment
+          </div>
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#14b8a6', opacity: 0.4 }} />
+              <span className="text-[10px] text-slate-400">Fragment extent</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#5eead4' }} />
+              <span className="text-[10px] text-slate-400">LFE events</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Sensor network legend */}
+      {showSensors && (
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
+          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
+            Sensors
+          </div>
+          <div className="flex flex-col gap-1">
+            {[
+              { color: '#3b82f6', label: 'NEPTUNE' },
+              { color: '#8b5cf6', label: 'OOI' },
+              { color: '#f97316', label: 'DART Buoy' },
+              { color: '#6b7280', label: 'Planned' },
+            ].map((s) => (
+              <div key={s.label} className="flex items-center gap-2">
+                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: s.color }} />
+                <span className="text-[10px] text-slate-400">{s.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ETS Tremor legend */}
+      {showTremor && (
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
+          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
+            Tremor Depth
+          </div>
+          <div className="flex flex-col gap-1">
+            {[
+              { color: '#c084fc', label: '< 30 km' },
+              { color: '#a855f7', label: '30–35 km' },
+              { color: '#7c3aed', label: '35–40 km' },
+              { color: '#6d28d9', label: '> 40 km' },
+            ].map((t) => (
+              <div key={t.label} className="flex items-center gap-2">
+                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: t.color }} />
+                <span className="text-[10px] text-slate-400">{t.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Seismic hazard legend */}
+      {showHazard && (
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
+          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
+            PGA (2% in 50yr)
+          </div>
+          <div className="flex flex-col gap-0.5">
+            {[
+              { color: '#22c55e', label: '< 0.1g' },
+              { color: '#eab308', label: '0.1–0.2g' },
+              { color: '#f97316', label: '0.2–0.4g' },
+              { color: '#ef4444', label: '0.4–0.8g' },
+              { color: '#7f1d1d', label: '> 0.8g' },
+            ].map((h) => (
+              <div key={h.label} className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: h.color, opacity: 0.7 }} />
+                <span className="text-[10px] text-slate-400">{h.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Tsunami wave height legend */}
       {showTsunami && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3">
+        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
           <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
             Wave Height
           </div>

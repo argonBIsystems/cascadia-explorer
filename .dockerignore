@@ -1,0 +1,20 @@
+# Python preprocessing — not needed at build/runtime
+scripts/
+data/
+.venv/
+__pycache__/
+
+# Dev/CI artifacts
+.git/
+.github/
+.vscode/
+.idea/
+*.md
+docs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Already handled by npm ci
+node_modules/

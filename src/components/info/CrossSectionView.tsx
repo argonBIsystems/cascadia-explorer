@@ -60,6 +60,7 @@ function generateTicks(min: number, max: number, targetCount: number): number[] 
 }
 
 export default function CrossSectionView() {
+  const isMobile = useAppStore((s) => s.isMobile);
   const crossSectionOpen = useAppStore((s) => s.crossSectionOpen);
   const setCrossSectionOpen = useAppStore((s) => s.setCrossSectionOpen);
   const crossSectionLat = useAppStore((s) => s.crossSectionLat);
@@ -197,14 +198,9 @@ export default function CrossSectionView() {
       "
     >
       <div
-        className="
-          pointer-events-auto
-          w-[800px] max-w-[95vw]
-          bg-[#0b1120]/[0.95] backdrop-blur-xl
-          border border-white/[0.20] rounded-t-2xl
-          shadow-[0_-4px_40px_rgba(0,0,0,0.5)]
-          p-4
-        "
+        className={`pointer-events-auto max-w-[95vw] bg-[#0b1120]/[0.95] backdrop-blur-xl border border-white/[0.20] rounded-t-2xl shadow-[0_-4px_40px_rgba(0,0,0,0.5)] ${
+          isMobile ? 'w-full p-3' : 'w-[800px] p-4'
+        }`}
       >
         {/* Header */}
         <div className="flex items-center justify-between mb-1">
@@ -215,14 +211,16 @@ export default function CrossSectionView() {
             >
               Cross-Section at {crossSectionLat.toFixed(1)}&deg;N
             </h2>
-            <p className="text-slate-400" style={{ fontSize: '12px', marginTop: '2px' }}>
-              Vertical slice through the Earth &mdash; showing the subducting Juan de Fuca plate beneath North America
-            </p>
+            {!isMobile && (
+              <p className="text-slate-400" style={{ fontSize: '12px', marginTop: '2px' }}>
+                Vertical slice through the Earth &mdash; showing the subducting Juan de Fuca plate beneath North America
+              </p>
+            )}
           </div>
 
           <div className="flex items-center gap-3 shrink-0">
             {/* Stats */}
-            {section && (
+            {!isMobile && section && (
               <div className="text-right mr-2">
                 <div className="text-slate-400" style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: '11px' }}>
                   {section.projectedQuakes.length} quakes &middot; slab to {section.slabProfile.length > 0 ? Math.round(section.slabProfile[section.slabProfile.length - 1]!.depth) : '?'} km
@@ -234,7 +232,7 @@ export default function CrossSectionView() {
             <button
               onClick={() => setCrossSectionOpen(false)}
               className="
-                w-8 h-8 flex items-center justify-center
+                w-10 h-10 md:w-8 md:h-8 flex items-center justify-center
                 text-slate-300 hover:text-white
                 bg-white/[0.08] hover:bg-white/[0.15]
                 rounded-lg transition-colors cursor-pointer
@@ -274,8 +272,8 @@ export default function CrossSectionView() {
             className="flex-1 h-1 appearance-none bg-white/10 rounded-full
                        accent-emerald-400 cursor-pointer
                        [&::-webkit-slider-thumb]:appearance-none
-                       [&::-webkit-slider-thumb]:w-3
-                       [&::-webkit-slider-thumb]:h-3
+                       [&::-webkit-slider-thumb]:w-5
+                       [&::-webkit-slider-thumb]:h-5
                        [&::-webkit-slider-thumb]:rounded-full
                        [&::-webkit-slider-thumb]:bg-emerald-400
                        [&::-webkit-slider-thumb]:shadow-[0_0_6px_rgba(52,211,153,0.5)]"

@@ -1,0 +1,223 @@
+{
+  "source": "Goldfinger et al., USGS PP 1661-F (2012)",
+  "reference_url": "https://pubs.usgs.gov/pp/pp1661f/",
+  "statistics": {
+    "full_margin_count": 19,
+    "full_margin_recurrence_yr": "500-590",
+    "southern_only_count": 18,
+    "oldest_event_cal_yr_bp": 9800,
+    "years_since_last": 326
+  },
+  "events": [
+    {
+      "id": "T1",
+      "name": "1700 CE Megathrust",
+      "age_cal_yr_bp": 250,
+      "age_ce": 1700,
+      "uncertainty_yr": 0,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.5, "south_lat": 40.5 },
+      "notes": "Confirmed by Japanese tsunami records. Heterogeneous rupture with larger slip in south."
+    },
+    {
+      "id": "T2",
+      "name": "~1310 CE Event",
+      "age_cal_yr_bp": 640,
+      "age_ce": 1310,
+      "uncertainty_yr": 60,
+      "type": "full-margin",
+      "rupture_length_km": 1000,
+      "estimated_magnitude": 8.8,
+      "extent": { "north_lat": 50.0, "south_lat": 40.5 }
+    },
+    {
+      "id": "T3",
+      "name": "~810 CE Event",
+      "age_cal_yr_bp": 1140,
+      "age_ce": 810,
+      "uncertainty_yr": 80,
+      "type": "full-margin",
+      "rupture_length_km": 1050,
+      "estimated_magnitude": 8.9,
+      "extent": { "north_lat": 50.0, "south_lat": 41.0 }
+    },
+    {
+      "id": "T4",
+      "name": "~410 CE Event",
+      "age_cal_yr_bp": 1540,
+      "age_ce": 410,
+      "uncertainty_yr": 100,
+      "type": "full-margin",
+      "rupture_length_km": 1000,
+      "estimated_magnitude": 8.8,
+      "extent": { "north_lat": 49.5, "south_lat": 41.0 }
+    },
+    {
+      "id": "T5",
+      "name": "~170 BCE Event",
+      "age_cal_yr_bp": 2120,
+      "age_ce": -170,
+      "uncertainty_yr": 100,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.5, "south_lat": 40.5 }
+    },
+    {
+      "id": "T6",
+      "name": "~600 BCE Event",
+      "age_cal_yr_bp": 2550,
+      "age_ce": -600,
+      "uncertainty_yr": 120,
+      "type": "full-margin",
+      "rupture_length_km": 950,
+      "estimated_magnitude": 8.7,
+      "extent": { "north_lat": 49.0, "south_lat": 41.0 }
+    },
+    {
+      "id": "T7",
+      "name": "~1050 BCE Event",
+      "age_cal_yr_bp": 3000,
+      "age_ce": -1050,
+      "uncertainty_yr": 130,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.0, "south_lat": 40.5 }
+    },
+    {
+      "id": "T8",
+      "name": "~1500 BCE Event",
+      "age_cal_yr_bp": 3450,
+      "age_ce": -1500,
+      "uncertainty_yr": 140,
+      "type": "full-margin",
+      "rupture_length_km": 1050,
+      "estimated_magnitude": 8.9,
+      "extent": { "north_lat": 50.0, "south_lat": 41.0 }
+    },
+    {
+      "id": "T9",
+      "name": "~1900 BCE Event",
+      "age_cal_yr_bp": 3850,
+      "age_ce": -1900,
+      "uncertainty_yr": 150,
+      "type": "full-margin",
+      "rupture_length_km": 1000,
+      "estimated_magnitude": 8.8,
+      "extent": { "north_lat": 49.5, "south_lat": 41.0 }
+    },
+    {
+      "id": "T10",
+      "name": "~2500 BCE Event",
+      "age_cal_yr_bp": 4450,
+      "age_ce": -2500,
+      "uncertainty_yr": 160,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.5, "south_lat": 40.5 }
+    },
+    {
+      "id": "T11",
+      "name": "~3000 BCE Event",
+      "age_cal_yr_bp": 4950,
+      "age_ce": -3000,
+      "uncertainty_yr": 180,
+      "type": "southern-only",
+      "rupture_length_km": 500,
+      "estimated_magnitude": 8.2,
+      "extent": { "north_lat": 44.5, "south_lat": 40.5 }
+    },
+    {
+      "id": "T12",
+      "name": "~3400 BCE Event",
+      "age_cal_yr_bp": 5350,
+      "age_ce": -3400,
+      "uncertainty_yr": 190,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.0, "south_lat": 40.5 }
+    },
+    {
+      "id": "T13",
+      "name": "~3900 BCE Event",
+      "age_cal_yr_bp": 5850,
+      "age_ce": -3900,
+      "uncertainty_yr": 200,
+      "type": "full-margin",
+      "rupture_length_km": 1050,
+      "estimated_magnitude": 8.9,
+      "extent": { "north_lat": 50.0, "south_lat": 41.0 }
+    },
+    {
+      "id": "T14",
+      "name": "~4400 BCE Southern Event",
+      "age_cal_yr_bp": 6350,
+      "age_ce": -4400,
+      "uncertainty_yr": 210,
+      "type": "southern-only",
+      "rupture_length_km": 450,
+      "estimated_magnitude": 8.1,
+      "extent": { "north_lat": 44.0, "south_lat": 40.5 }
+    },
+    {
+      "id": "T15",
+      "name": "~4900 BCE Event",
+      "age_cal_yr_bp": 6850,
+      "age_ce": -4900,
+      "uncertainty_yr": 220,
+      "type": "full-margin",
+      "rupture_length_km": 1000,
+      "estimated_magnitude": 8.8,
+      "extent": { "north_lat": 49.5, "south_lat": 41.0 }
+    },
+    {
+      "id": "T16",
+      "name": "~5500 BCE Event",
+      "age_cal_yr_bp": 7450,
+      "age_ce": -5500,
+      "uncertainty_yr": 250,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.5, "south_lat": 40.5 }
+    },
+    {
+      "id": "T17",
+      "name": "~6100 BCE Event",
+      "age_cal_yr_bp": 8050,
+      "age_ce": -6100,
+      "uncertainty_yr": 270,
+      "type": "full-margin",
+      "rupture_length_km": 1050,
+      "estimated_magnitude": 8.9,
+      "extent": { "north_lat": 50.0, "south_lat": 41.0 }
+    },
+    {
+      "id": "T18",
+      "name": "~6800 BCE Southern Event",
+      "age_cal_yr_bp": 8750,
+      "age_ce": -6800,
+      "uncertainty_yr": 300,
+      "type": "southern-only",
+      "rupture_length_km": 500,
+      "estimated_magnitude": 8.2,
+      "extent": { "north_lat": 45.0, "south_lat": 40.5 }
+    },
+    {
+      "id": "T19",
+      "name": "~7850 BCE Event",
+      "age_cal_yr_bp": 9800,
+      "age_ce": -7850,
+      "uncertainty_yr": 350,
+      "type": "full-margin",
+      "rupture_length_km": 1100,
+      "estimated_magnitude": 9.0,
+      "extent": { "north_lat": 50.5, "south_lat": 40.5 }
+    }
+  ]
+}

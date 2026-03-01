@@ -87,6 +87,7 @@ interface TimelineProps {
 }
 
 export default function Timeline({ viewer }: TimelineProps) {
+  const isMobile = useAppStore((s) => s.isMobile);
   const timelineOpen = useAppStore((s) => s.timelineOpen);
   const setTimelineOpen = useAppStore((s) => s.setTimelineOpen);
   const selectedTimelineEvent = useAppStore((s) => s.selectedTimelineEvent);
@@ -162,14 +163,14 @@ export default function Timeline({ viewer }: TimelineProps) {
       <button
         type="button"
         onClick={() => setTimelineOpen(true)}
-        className="
-          fixed bottom-4 right-4 z-50
+        className={`
+          fixed ${isMobile ? 'bottom-[68px]' : 'bottom-4'} right-4 z-50
           bg-[#0c1222]/[0.92] backdrop-blur-xl
           border border-white/[0.18] rounded-xl
           px-3 py-2 flex items-center gap-2
           text-slate-400 hover:text-slate-200
           hover:bg-[#0c1222] transition-colors cursor-pointer
-        "
+        `}
         style={{ fontFamily: '"DM Sans", sans-serif', fontSize: '13px', fontWeight: 500 }}
       >
         {/* Clock icon */}
@@ -187,17 +188,18 @@ export default function Timeline({ viewer }: TimelineProps) {
   // -------------------------------------------------------------------------
   return (
     <div
-      className="
+      className={`
         fixed bottom-0 left-0 right-0 z-50
         bg-[#0c1222]/[0.92] backdrop-blur-xl
         border-t border-white/[0.18]
         flex flex-col
-      "
+        ${isMobile ? 'pb-[60px]' : ''}
+      `}
       style={{ fontFamily: '"DM Sans", sans-serif' }}
     >
       {/* ---- Narrative panel (slides up when event selected) ---- */}
       {selectedEvent && (
-        <div className="px-6 pt-4 pb-3 border-b border-white/[0.06]">
+        <div className={`${isMobile ? 'px-4 pt-3 pb-2' : 'px-6 pt-4 pb-3'} border-b border-white/[0.06]`}>
           <div className="max-w-3xl mx-auto">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 min-w-0">
@@ -266,7 +268,7 @@ export default function Timeline({ viewer }: TimelineProps) {
       )}
 
       {/* ---- Timeline track ---- */}
-      <div className="px-6 py-3">
+      <div className={`${isMobile ? 'px-3 py-2' : 'px-6 py-3'}`}>
         <div className="max-w-5xl mx-auto">
           {/* Header row */}
           <div className="flex items-center justify-between mb-2">
@@ -301,7 +303,7 @@ export default function Timeline({ viewer }: TimelineProps) {
                 }}
                 className="
                   text-slate-500 hover:text-slate-300 transition-colors cursor-pointer
-                  w-6 h-6 flex items-center justify-center rounded-md
+                  w-10 h-10 md:w-6 md:h-6 flex items-center justify-center rounded-md
                   hover:bg-white/[0.06]
                 "
                 aria-label="Close timeline"
@@ -357,10 +359,12 @@ export default function Timeline({ viewer }: TimelineProps) {
                   onClick={() => handleEventClick(evt.id)}
                   onMouseEnter={() => setHoveredEvent(evt.id)}
                   onMouseLeave={() => setHoveredEvent(null)}
-                  className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
+                  className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group flex items-center justify-center"
                   style={{
                     left: `${pos * 100}%`,
                     zIndex: isSelected || isHovered ? 20 : 10,
+                    minWidth: '44px',
+                    minHeight: '44px',
                   }}
                   aria-label={`${evt.title} (${formatYear(evt.year)})`}
                 >

@@ -27,3 +27,16 @@
 .cesium-widget canvas {
   outline: none;
 }
+
+/* Ensure minimum touch targets on mobile */
+@media (max-width: 767px) {
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

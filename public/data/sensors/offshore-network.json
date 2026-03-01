@@ -1,0 +1,64 @@
+{
+  "networks": [
+    {
+      "id": "neptune",
+      "name": "ONC NEPTUNE",
+      "operator": "Ocean Networks Canada",
+      "type": "cabled-observatory",
+      "url": "https://data.oceannetworks.ca/",
+      "color": "#3b82f6",
+      "stations": [
+        { "id": "ncbc", "name": "Cascadia Basin", "lat": 47.767, "lon": -127.766, "depth_m": 2660, "instruments": ["broadband-seismometer", "pressure-gauge", "hydrophone"], "status": "active" },
+        { "id": "ncmr", "name": "Middleton Reef", "lat": 48.933, "lon": -126.050, "depth_m": 800, "instruments": ["seismometer", "pressure-gauge"], "status": "active" },
+        { "id": "ncfr", "name": "Folger Reef", "lat": 48.814, "lon": -125.287, "depth_m": 27, "instruments": ["hydrophone", "current-meter"], "status": "active" },
+        { "id": "ncei", "name": "Endeavour", "lat": 47.950, "lon": -129.098, "depth_m": 2186, "instruments": ["broadband-seismometer", "fluid-sampler", "pressure-gauge"], "status": "active" },
+        { "id": "ncbi", "name": "Barkley Canyon", "lat": 48.317, "lon": -126.050, "depth_m": 985, "instruments": ["camera", "CTD", "oxygen-sensor"], "status": "active" },
+        { "id": "nccs", "name": "Clayoquot Slope", "lat": 48.667, "lon": -126.851, "depth_m": 1265, "instruments": ["seismometer", "pressure-gauge", "ADCP"], "status": "active" }
+      ]
+    },
+    {
+      "id": "ooi",
+      "name": "OOI Regional Cabled Array",
+      "operator": "University of Washington / NSF",
+      "type": "cabled-observatory",
+      "url": "https://oceanobservatories.org/",
+      "color": "#8b5cf6",
+      "stations": [
+        { "id": "ce01", "name": "Oregon Inshore", "lat": 44.660, "lon": -124.095, "depth_m": 25, "instruments": ["CTD", "ADCP", "wave-buoy"], "status": "active" },
+        { "id": "ce02", "name": "Oregon Shelf", "lat": 44.637, "lon": -124.306, "depth_m": 80, "instruments": ["profiler", "CTD", "dissolved-oxygen"], "status": "active" },
+        { "id": "ce04", "name": "Oregon Offshore", "lat": 44.370, "lon": -124.954, "depth_m": 588, "instruments": ["profiler", "broadband-seismometer", "pressure-gauge"], "status": "active" },
+        { "id": "rs01", "name": "Slope Base", "lat": 44.529, "lon": -125.389, "depth_m": 2905, "instruments": ["broadband-seismometer", "pressure-gauge", "CTD"], "status": "active" },
+        { "id": "rs03", "name": "Axial Base", "lat": 45.830, "lon": -129.754, "depth_m": 2607, "instruments": ["broadband-seismometer", "hydrophone", "bottom-pressure"], "status": "active" },
+        { "id": "ax01", "name": "Axial Caldera", "lat": 45.955, "lon": -130.009, "depth_m": 1527, "instruments": ["seismometer", "tilt-meter", "fluid-sampler"], "status": "active" }
+      ]
+    },
+    {
+      "id": "dart",
+      "name": "NOAA DART Buoys",
+      "operator": "NOAA/NWS/NCTR",
+      "type": "deep-ocean-pressure",
+      "url": "https://www.ndbc.noaa.gov/",
+      "color": "#f97316",
+      "stations": [
+        { "id": "46404", "name": "DART 46404", "lat": 45.860, "lon": -128.779, "depth_m": 2872, "instruments": ["bottom-pressure-recorder"], "status": "active" },
+        { "id": "46407", "name": "DART 46407", "lat": 42.677, "lon": -128.859, "depth_m": 3311, "instruments": ["bottom-pressure-recorder"], "status": "active" },
+        { "id": "46410", "name": "DART 46410", "lat": 57.492, "lon": -143.863, "depth_m": 4559, "instruments": ["bottom-pressure-recorder"], "status": "active" },
+        { "id": "46419", "name": "DART 46419", "lat": 48.780, "lon": -129.616, "depth_m": 2783, "instruments": ["bottom-pressure-recorder"], "status": "active" },
+        { "id": "46402", "name": "DART 46402", "lat": 51.072, "lon": -164.049, "depth_m": 3480, "instruments": ["bottom-pressure-recorder"], "status": "active" }
+      ]
+    },
+    {
+      "id": "coszo",
+      "name": "COSZO (Planned)",
+      "operator": "Cascadia Offshore Subduction Zone Observatory",
+      "type": "planned",
+      "url": "https://cascadiaoffshore.org/",
+      "color": "#6b7280",
+      "stations": [
+        { "id": "coszo-n", "name": "Northern Array", "lat": 48.5, "lon": -127.0, "depth_m": 1500, "instruments": ["planned-seismometer", "planned-geodetic"], "status": "planned" },
+        { "id": "coszo-c", "name": "Central Array", "lat": 45.5, "lon": -126.0, "depth_m": 2000, "instruments": ["planned-seismometer", "planned-geodetic"], "status": "planned" },
+        { "id": "coszo-s", "name": "Southern Array", "lat": 42.0, "lon": -125.5, "depth_m": 1800, "instruments": ["planned-seismometer", "planned-geodetic"], "status": "planned" }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 export type TimeRange = '24h' | '7d' | '30d' | '1yr';
 
-export type LayerId = 'slab' | 'earthquakes' | 'faults' | 'gps' | 'scenarios' | 'tsunami' | 'annotations';
+export type LayerId = 'slab' | 'earthquakes' | 'faults' | 'gps' | 'scenarios' | 'tsunami' | 'annotations' | 'volcanoes' | 'coupling' | 'pioneer' | 'paleoseismic' | 'sensors' | 'tremor' | 'hazard';
 
 export type ReferenceFrame = 'itrf' | 'nam14';
 
@@ -73,7 +73,8 @@ export type AnnotationCategory =
   | 'fluid-pathway'
   | 'slow-slip'
   | 'plate-deformation'
-  | 'transform-fault';
+  | 'transform-fault'
+  | 'slab-fragment';
 
 export interface AnnotationPaper {
   title: string;

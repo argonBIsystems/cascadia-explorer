@@ -11,6 +11,7 @@ const TIME_OPTIONS: { label: string; value: TimeRange }[] = [
 ];
 
 export default function BottomBar() {
+  const isMobile = useAppStore((s) => s.isMobile);
   const timeRange = useAppStore((s) => s.timeRange);
   const setTimeRange = useAppStore((s) => s.setTimeRange);
   const crossSectionOpen = useAppStore((s) => s.crossSectionOpen);
@@ -18,6 +19,8 @@ export default function BottomBar() {
   const { data } = useEarthquakes();
   const eventCount = data?.length;
 
+  // On mobile the BottomBar is replaced by MobileTabBar
+  if (isMobile) return null;
   // Hide when cross-section is open to avoid overlap
   if (crossSectionOpen) return null;
 

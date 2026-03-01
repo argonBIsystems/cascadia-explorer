@@ -16,6 +16,7 @@ function formatCoord(value: number, pos: string, neg: string): string {
 }
 
 export default function WhatIfPanel() {
+  const isMobile = useAppStore((s) => s.isMobile);
   const whatIfLocation = useAppStore((s) => s.whatIfLocation);
   const setWhatIfLocation = useAppStore((s) => s.setWhatIfLocation);
   const selectedScenario = useAppStore((s) => s.selectedScenario);
@@ -39,7 +40,9 @@ export default function WhatIfPanel() {
   if (!scenariosVisible || !selectedScenario || !whatIfLocation) return null;
 
   return (
-    <div className="fixed right-4 bottom-20 z-50 w-80 max-h-[calc(100vh-160px)] overflow-y-auto bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4">
+    <div className={`fixed z-50 max-h-[calc(100vh-160px)] overflow-y-auto bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4 ${
+      isMobile ? 'bottom-[60px] left-2 right-2' : 'right-4 bottom-20 w-80'
+    }`}>
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
         <h3
@@ -51,7 +54,7 @@ export default function WhatIfPanel() {
         <button
           type="button"
           onClick={() => setWhatIfLocation(null)}
-          className="text-slate-500 hover:text-slate-300 transition-colors cursor-pointer p-1 -m-1"
+          className="w-10 h-10 md:w-6 md:h-6 flex items-center justify-center text-slate-500 hover:text-slate-300 transition-colors cursor-pointer"
           aria-label="Close panel"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

@@ -4,6 +4,7 @@ import { useTsunamiPropagation, useTsunamiArrivals } from '../../hooks/useTsunam
 
 export default function TsunamiPlayer() {
   const visible = useAppStore((s) => s.layers.tsunami.visible);
+  const isMobile = useAppStore((s) => s.isMobile);
   const playing = useAppStore((s) => s.animationPlaying);
   const setPlaying = useAppStore((s) => s.setAnimationPlaying);
   const animationTime = useAppStore((s) => s.animationTime);
@@ -47,7 +48,9 @@ export default function TsunamiPlayer() {
   const triggeredArrivals = arrivals?.filter((a) => a.arrivalMinutes <= animationTime) ?? [];
 
   return (
-    <div className="fixed bottom-24 right-4 z-40 w-72 bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4">
+    <div className={`fixed z-40 bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4 ${
+      isMobile ? 'bottom-[60px] left-2 right-2' : 'bottom-24 right-4 w-72'
+    }`}>
       <h3
         className="text-slate-100 mb-1"
         style={{ fontFamily: '"DM Sans", sans-serif', fontWeight: 600, fontSize: '14px' }}
@@ -90,7 +93,7 @@ export default function TsunamiPlayer() {
         <button
           type="button"
           onClick={() => setAnimationTime(0)}
-          className="w-7 h-7 flex items-center justify-center rounded-md text-slate-400 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] transition-colors cursor-pointer text-xs"
+          className={`${isMobile ? 'min-h-[44px] min-w-[44px]' : 'w-7 h-7'} flex items-center justify-center rounded-md text-slate-400 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] transition-colors cursor-pointer text-xs`}
           aria-label="Reset"
         >
           &#8634;
@@ -98,7 +101,7 @@ export default function TsunamiPlayer() {
         <button
           type="button"
           onClick={() => setPlaying(!playing)}
-          className="flex-1 h-7 flex items-center justify-center rounded-md text-slate-300 hover:text-white bg-white/[0.06] hover:bg-white/[0.10] transition-colors cursor-pointer text-xs font-medium"
+          className={`flex-1 ${isMobile ? 'min-h-[44px]' : 'h-7'} flex items-center justify-center rounded-md text-slate-300 hover:text-white bg-white/[0.06] hover:bg-white/[0.10] transition-colors cursor-pointer text-xs font-medium`}
         >
           {playing ? 'Pause' : 'Play'}
         </button>
