@@ -99,6 +99,7 @@ export default function VolcanoLayer({ viewer }: VolcanoLayerProps) {
             if (volcanoFeature) {
               const [lon, lat] = volcanoFeature.geometry.coordinates;
               setSelectedVolcano({
+                vnum: volcanoFeature.properties.vnum,
                 name: volcanoFeature.properties.name,
                 latitude: lat,
                 longitude: lon,

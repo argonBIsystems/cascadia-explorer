@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { TimeRange, LayerId, LayerState, SelectedEarthquake, SelectedVolcano, ReferenceFrame } from '../types';
+import type { TimeRange, LayerId, LayerState, SelectedEarthquake, SelectedVolcano, RiskScore } from '../types';
 
 interface AppState {
   // Layer visibility
@@ -24,29 +24,19 @@ interface AppState {
   topBarVisible: boolean;
   setTopBarVisible: (visible: boolean) => void;
 
-  // GPS reference frame
-  referenceFrame: ReferenceFrame;
-  setReferenceFrame: (frame: ReferenceFrame) => void;
-
-  // Scenario selection
-  selectedScenario: string | null;
-  setSelectedScenario: (id: string | null) => void;
-
-  // Tsunami animation
-  animationPlaying: boolean;
-  setAnimationPlaying: (playing: boolean) => void;
-  animationTime: number;
-  setAnimationTime: (time: number) => void;
-
   // Cross-section view
   crossSectionOpen: boolean;
   setCrossSectionOpen: (open: boolean) => void;
   crossSectionLat: number;
   setCrossSectionLat: (lat: number) => void;
 
-  // Selected annotation
-  selectedAnnotation: string | null;
-  setSelectedAnnotation: (id: string | null) => void;
+  // Selected volcano
+  selectedVolcano: SelectedVolcano | null;
+  setSelectedVolcano: (v: SelectedVolcano | null) => void;
+
+  // Seismic Risk Analysis (ML)
+  riskScore: RiskScore | null;
+  setRiskScore: (score: RiskScore | null) => void;
 
   // Historical timeline
   timelineOpen: boolean;
@@ -54,27 +44,11 @@ interface AppState {
   selectedTimelineEvent: string | null;
   setSelectedTimelineEvent: (id: string | null) => void;
 
-  // Selected volcano
-  selectedVolcano: SelectedVolcano | null;
-  setSelectedVolcano: (v: SelectedVolcano | null) => void;
-
-  // What-If scenario builder
-  whatIfLocation: { lat: number; lon: number } | null;
-  setWhatIfLocation: (loc: { lat: number; lon: number } | null) => void;
-
-  // ETS Tremor animation
-  selectedEtsEpisode: string | null;
-  setSelectedEtsEpisode: (id: string | null) => void;
-  tremorAnimationPlaying: boolean;
-  setTremorAnimationPlaying: (playing: boolean) => void;
-  tremorAnimationDay: number;
-  setTremorAnimationDay: (day: number) => void;
-
   // Mobile UI
   isMobile: boolean;
   setIsMobile: (mobile: boolean) => void;
-  activeDrawer: 'layers' | 'scenarios' | 'info' | 'timeline' | null;
-  setActiveDrawer: (drawer: 'layers' | 'scenarios' | 'info' | 'timeline' | null) => void;
+  activeDrawer: 'layers' | 'info' | 'timeline' | null;
+  setActiveDrawer: (drawer: 'layers' | 'info' | 'timeline' | null) => void;
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -82,25 +56,27 @@ export const useAppStore = create<AppState>((set) => ({
     slab: { visible: false, loading: false, error: null },
     earthquakes: { visible: false, loading: false, error: null },
     faults: { visible: true, loading: false, error: null },
-    gps: { visible: false, loading: false, error: null },
-    scenarios: { visible: false, loading: false, error: null },
-    tsunami: { visible: false, loading: false, error: null },
-    annotations: { visible: false, loading: false, error: null },
     volcanoes: { visible: false, loading: false, error: null },
-    coupling: { visible: false, loading: false, error: null },
-    pioneer: { visible: false, loading: false, error: null },
-    paleoseismic: { visible: false, loading: false, error: null },
-    sensors: { visible: false, loading: false, error: null },
-    tremor: { visible: false, loading: false, error: null },
-    hazard: { visible: false, loading: false, error: null },
+    risk: { visible: false, loading: false, error: null },
   },
   toggleLayer: (id) =>
-    set((state) => ({
-      layers: {
-        ...state.layers,
-        [id]: { ...state.layers[id], visible: !state.layers[id].visible },
-      },
-    })),
+    set((state) => {
+      const wasVisible = state.layers[id].visible;
+      const nowVisible = !wasVisible;
+      const cleared: Partial<AppState> = {};
+      if (wasVisible && !nowVisible) {
+        if (id === 'earthquakes') cleared.selectedEarthquake = null;
+        if (id === 'volcanoes') cleared.selectedVolcano = null;
+        if (id === 'risk') cleared.riskScore = null;
+      }
+      return {
+        ...cleared,
+        layers: {
+          ...state.layers,
+          [id]: { ...state.layers[id], visible: nowVisible },
+        },
+      };
+    }),
   setLayerLoading: (id, loading) =>
     set((state) => ({
       layers: {
@@ -118,47 +94,45 @@ export const useAppStore = create<AppState>((set) => ({
   timeRange: '30d',
   setTimeRange: (range) => set({ timeRange: range }),
   selectedEarthquake: null,
-  setSelectedEarthquake: (eq) => set({ selectedEarthquake: eq, selectedAnnotation: null, selectedVolcano: null, ...(eq != null ? { activeDrawer: null } : {}) }),
+  setSelectedEarthquake: (eq) => set({
+    selectedEarthquake: eq,
+    selectedVolcano: null,
+    riskScore: null,
+    ...(eq != null ? { activeDrawer: null } : {}),
+  }),
   globeReady: false,
   setGlobeReady: (ready) => set({ globeReady: ready }),
   topBarVisible: true,
   setTopBarVisible: (visible) => set({ topBarVisible: visible }),
-  referenceFrame: 'nam14',
-  setReferenceFrame: (frame) => set({ referenceFrame: frame }),
-  selectedScenario: null,
-  setSelectedScenario: (id) => set({ selectedScenario: id }),
-  animationPlaying: false,
-  setAnimationPlaying: (playing) => set({ animationPlaying: playing }),
-  animationTime: 0,
-  setAnimationTime: (time) => set({ animationTime: time }),
   crossSectionOpen: false,
   setCrossSectionOpen: (open) => set({ crossSectionOpen: open }),
   crossSectionLat: 46.0,
   setCrossSectionLat: (lat) => set({ crossSectionLat: lat }),
-  selectedAnnotation: null,
-  setSelectedAnnotation: (id) => set({ selectedAnnotation: id, selectedEarthquake: null, selectedVolcano: null, ...(id != null ? { activeDrawer: null } : {}) }),
+  selectedVolcano: null,
+  setSelectedVolcano: (v) => set({
+    selectedVolcano: v,
+    selectedEarthquake: null,
+    riskScore: null,
+    ...(v != null ? { activeDrawer: null } : {}),
+  }),
+  riskScore: null,
+  setRiskScore: (score) => set({
+    riskScore: score,
+    selectedEarthquake: null,
+    selectedVolcano: null,
+    ...(score != null ? { activeDrawer: null } : {}),
+  }),
   timelineOpen: false,
   setTimelineOpen: (open) => set({ timelineOpen: open }),
   selectedTimelineEvent: null,
   setSelectedTimelineEvent: (id) => set({ selectedTimelineEvent: id }),
-  selectedVolcano: null,
-  setSelectedVolcano: (v) => set({ selectedVolcano: v, selectedEarthquake: null, selectedAnnotation: null, activeDrawer: null }),
-  whatIfLocation: null,
-  setWhatIfLocation: (loc) => set({ whatIfLocation: loc }),
-  selectedEtsEpisode: null,
-  setSelectedEtsEpisode: (id) => set({ selectedEtsEpisode: id }),
-  tremorAnimationPlaying: false,
-  setTremorAnimationPlaying: (playing) => set({ tremorAnimationPlaying: playing }),
-  tremorAnimationDay: 0,
-  setTremorAnimationDay: (day) => set({ tremorAnimationDay: day }),
   isMobile: false,
   setIsMobile: (mobile) => set({ isMobile: mobile }),
   activeDrawer: null,
   setActiveDrawer: (drawer) => set((state) => ({
     activeDrawer: state.activeDrawer === drawer ? null : drawer,
-    // Clear selection drawers when opening a panel drawer to prevent overlap
     ...(drawer != null && state.activeDrawer !== drawer
-      ? { selectedEarthquake: null, selectedAnnotation: null }
+      ? { selectedEarthquake: null, selectedVolcano: null, riskScore: null }
       : {}),
   })),
 }));

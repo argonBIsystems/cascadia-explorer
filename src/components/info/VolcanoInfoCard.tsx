@@ -94,7 +94,7 @@ export default function VolcanoInfoCard() {
       {/* Footer */}
       <div className="mt-4 pt-3 border-t border-white/[0.06]">
         <a
-          href={`https://volcanoes.usgs.gov/volcanoes/${selectedVolcano.name.toLowerCase().replace(/[\s.]+/g, '_')}/`}
+          href={`https://volcanoes.usgs.gov/vsc/api/volcanoApi/volcanoPage?volcanoId=${selectedVolcano.vnum}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-emerald-400 hover:text-emerald-300 text-sm transition-colors"

@@ -22,7 +22,7 @@ interface TourOverlayProps {
   onClose: () => void;
 }
 
-const ALL_LAYER_IDS: LayerId[] = ['slab', 'earthquakes', 'faults', 'gps', 'scenarios', 'tsunami', 'annotations', 'volcanoes', 'coupling', 'pioneer', 'paleoseismic', 'sensors', 'tremor', 'hazard'];
+const ALL_LAYER_IDS: LayerId[] = ['slab', 'earthquakes', 'faults', 'volcanoes', 'risk'];
 
 export default function TourOverlay({ viewer, onClose }: TourOverlayProps) {
   const [tourData, setTourData] = useState<TourData | null>(null);

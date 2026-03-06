@@ -30,17 +30,9 @@ export default function Legend() {
   const showEarthquakes = layers.earthquakes.visible;
   const showSlab = layers.slab.visible;
   const showFaults = layers.faults.visible;
-  const showGPS = layers.gps.visible;
-  const showScenarios = layers.scenarios.visible;
-  const showTsunami = layers.tsunami.visible;
   const showVolcanoes = layers.volcanoes.visible;
-  const showCoupling = layers.coupling.visible;
-  const showPioneer = layers.pioneer.visible;
-  const showSensors = layers.sensors.visible;
-  const showTremor = layers.tremor.visible;
-  const showHazard = layers.hazard.visible;
 
-  if (!showEarthquakes && !showSlab && !showFaults && !showGPS && !showScenarios && !showTsunami && !showVolcanoes && !showCoupling && !showPioneer && !showSensors && !showTremor && !showHazard) return null;
+  if (!showEarthquakes && !showSlab && !showFaults && !showVolcanoes) return null;
 
   return (
     <div
@@ -87,9 +79,7 @@ export default function Legend() {
                   className="rounded-full bg-white/60"
                   style={{ width: m.size, height: m.size }}
                 />
-                <span className="text-[10px] font-mono text-slate-400">
-                  {m.label}
-                </span>
+                <span className="text-[10px] font-mono text-slate-400">{m.label}</span>
               </div>
             ))}
           </div>
@@ -119,51 +109,6 @@ export default function Legend() {
           </div>
         </div>
       )}
-      {/* GPS velocity legend */}
-      {showGPS && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            GPS Velocity
-          </div>
-          <div className="flex flex-col gap-1">
-            {[
-              { color: '#60a5fa', label: '< 5 mm/yr' },
-              { color: '#34d399', label: '5–15 mm/yr' },
-              { color: '#fbbf24', label: '15–30 mm/yr' },
-              { color: '#f87171', label: '> 30 mm/yr' },
-            ].map((v) => (
-              <div key={v.label} className="flex items-center gap-2">
-                <div className="w-4 h-0.5 rounded-full" style={{ backgroundColor: v.color }} />
-                <span className="text-[10px] text-slate-400">{v.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* MMI legend for scenarios */}
-      {showScenarios && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            Shaking (MMI)
-          </div>
-          <div className="flex flex-col gap-0.5">
-            {[
-              { color: '#80ffb4', label: 'IV Light' },
-              { color: '#ffff00', label: 'V Moderate' },
-              { color: '#ffc800', label: 'VI Strong' },
-              { color: '#ff9100', label: 'VII Very Strong' },
-              { color: '#ff0000', label: 'VIII Severe' },
-              { color: '#c80000', label: 'IX+ Violent' },
-            ].map((m) => (
-              <div key={m.label} className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: m.color, opacity: 0.7 }} />
-                <span className="text-[10px] text-slate-400">{m.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Volcano alert legend */}
       {showVolcanoes && (
@@ -183,137 +128,6 @@ export default function Legend() {
                   <polygon points="6,1 11,11 1,11" fill={v.color} />
                 </svg>
                 <span className="text-[10px] text-slate-400">{v.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Coupling legend */}
-      {showCoupling && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            Fault Locking
-          </div>
-          <div className="flex flex-col gap-0.5">
-            {[
-              { color: '#3b82f6', label: 'Creeping' },
-              { color: '#a78bfa', label: 'Partial' },
-              { color: '#f59e0b', label: 'Mostly Locked' },
-              { color: '#ef4444', label: 'Fully Locked' },
-            ].map((c) => (
-              <div key={c.label} className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: c.color, opacity: 0.7 }} />
-                <span className="text-[10px] text-slate-400">{c.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Pioneer Fragment legend */}
-      {showPioneer && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            Pioneer Fragment
-          </div>
-          <div className="flex flex-col gap-1">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: '#14b8a6', opacity: 0.4 }} />
-              <span className="text-[10px] text-slate-400">Fragment extent</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: '#5eead4' }} />
-              <span className="text-[10px] text-slate-400">LFE events</span>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Sensor network legend */}
-      {showSensors && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            Sensors
-          </div>
-          <div className="flex flex-col gap-1">
-            {[
-              { color: '#3b82f6', label: 'NEPTUNE' },
-              { color: '#8b5cf6', label: 'OOI' },
-              { color: '#f97316', label: 'DART Buoy' },
-              { color: '#6b7280', label: 'Planned' },
-            ].map((s) => (
-              <div key={s.label} className="flex items-center gap-2">
-                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: s.color }} />
-                <span className="text-[10px] text-slate-400">{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* ETS Tremor legend */}
-      {showTremor && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            Tremor Depth
-          </div>
-          <div className="flex flex-col gap-1">
-            {[
-              { color: '#c084fc', label: '< 30 km' },
-              { color: '#a855f7', label: '30–35 km' },
-              { color: '#7c3aed', label: '35–40 km' },
-              { color: '#6d28d9', label: '> 40 km' },
-            ].map((t) => (
-              <div key={t.label} className="flex items-center gap-2">
-                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: t.color }} />
-                <span className="text-[10px] text-slate-400">{t.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Seismic hazard legend */}
-      {showHazard && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            PGA (2% in 50yr)
-          </div>
-          <div className="flex flex-col gap-0.5">
-            {[
-              { color: '#22c55e', label: '< 0.1g' },
-              { color: '#eab308', label: '0.1–0.2g' },
-              { color: '#f97316', label: '0.2–0.4g' },
-              { color: '#ef4444', label: '0.4–0.8g' },
-              { color: '#7f1d1d', label: '> 0.8g' },
-            ].map((h) => (
-              <div key={h.label} className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: h.color, opacity: 0.7 }} />
-                <span className="text-[10px] text-slate-400">{h.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Tsunami wave height legend */}
-      {showTsunami && (
-        <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
-          <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wide mb-2">
-            Wave Height
-          </div>
-          <div className="flex flex-col gap-0.5">
-            {[
-              { color: '#60a5fa', label: '< 0.5m' },
-              { color: '#22d3ee', label: '0.5–2m' },
-              { color: '#fbbf24', label: '2–4m' },
-              { color: '#f97316', label: '4–8m' },
-              { color: '#ef4444', label: '> 8m' },
-            ].map((w) => (
-              <div key={w.label} className="flex items-center gap-2">
-                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: w.color }} />
-                <span className="text-[10px] text-slate-400">{w.label}</span>
               </div>
             ))}
           </div>

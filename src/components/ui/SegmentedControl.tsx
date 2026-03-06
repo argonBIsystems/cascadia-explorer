@@ -6,13 +6,15 @@ interface SegmentedControlProps {
 
 export default function SegmentedControl({ options, value, onChange }: SegmentedControlProps) {
   return (
-    <div className="flex items-center bg-white/[0.06] rounded-lg p-0.5 h-[36px]">
+    <div role="radiogroup" className="flex items-center bg-white/[0.06] rounded-lg p-0.5 h-[36px]">
       {options.map((option) => {
         const isActive = option.value === value;
         return (
           <button
             key={option.value}
             type="button"
+            role="radio"
+            aria-checked={isActive}
             onClick={() => onChange(option.value)}
             className={`
               px-3 h-full text-[13px] rounded-md cursor-pointer

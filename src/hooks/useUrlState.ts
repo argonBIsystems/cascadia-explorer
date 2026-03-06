@@ -3,11 +3,11 @@ import { Viewer, Cartesian3, Math as CesiumMath } from 'cesium';
 import { useAppStore } from '../store/useAppStore';
 import type { LayerId, TimeRange } from '../types';
 
-const VALID_LAYERS: LayerId[] = ['slab', 'earthquakes', 'faults', 'gps', 'scenarios', 'tsunami', 'annotations', 'volcanoes', 'coupling', 'pioneer', 'paleoseismic', 'sensors', 'tremor', 'hazard'];
+const VALID_LAYERS: LayerId[] = ['slab', 'earthquakes', 'faults', 'volcanoes', 'risk'];
 const VALID_TIME_RANGES: TimeRange[] = ['24h', '7d', '30d', '1yr'];
 
 function parseHash(): Record<string, string> {
-  const hash = window.location.hash.slice(1); // Remove #
+  const hash = window.location.hash.slice(1);
   const params: Record<string, string> = {};
   for (const part of hash.split('&')) {
     const [key, val] = part.split('=');
@@ -53,11 +53,6 @@ export function useUrlState(viewer: Viewer | null) {
       store.setTimeRange(params.time as TimeRange);
     }
 
-    // Apply scenario
-    if (params.scenario) {
-      store.setSelectedScenario(params.scenario);
-    }
-
     // Apply camera position
     const lat = parseFloat(params.lat ?? '');
     const lon = parseFloat(params.lon ?? '');
@@ -97,9 +92,6 @@ export function useUrlState(viewer: Viewer | null) {
         if (state.timeRange !== '30d') {
           params.time = state.timeRange;
         }
-        if (state.selectedScenario) {
-          params.scenario = state.selectedScenario;
-        }
 
         // Get camera position
         try {
@@ -119,7 +111,7 @@ export function useUrlState(viewer: Viewer | null) {
         } else {
           window.history.replaceState(null, '', window.location.pathname);
         }
-      }, 1000); // 1s debounce
+      }, 1000);
     });
 
     return () => {

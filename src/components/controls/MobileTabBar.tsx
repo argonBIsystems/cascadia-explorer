@@ -2,12 +2,11 @@ import { useCallback } from 'react';
 import { useAppStore } from '../../store/useAppStore';
 import { useEarthquakes } from '../../hooks/useEarthquakes';
 
-type DrawerType = 'layers' | 'scenarios' | 'info' | 'timeline';
+type DrawerType = 'layers' | 'info' | 'timeline';
 
 const TABS: { id: DrawerType; label: string; icon: string }[] = [
   { id: 'layers', label: 'Layers', icon: 'M3 6h18M3 12h18M3 18h18' },
   { id: 'info', label: 'Tools', icon: 'M12 8V4l8 8-8 8v-4H4V8h8z' },
-  { id: 'scenarios', label: 'Scenarios', icon: 'M13 2L3 14h9l-1 8 10-12h-9l1-8' },
   { id: 'timeline', label: 'Timeline', icon: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 4v6l4 2' },
 ];
 

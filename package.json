@@ -18,7 +18,6 @@
     "cesium": "^1.138",
     "react": "^19",
     "react-dom": "^19",
-    "resium": "^1.19",
     "serve": "^14",
     "zustand": "^5"
   },

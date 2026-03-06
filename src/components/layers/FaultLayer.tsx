@@ -84,8 +84,10 @@ export default function FaultLayer({ viewer }: FaultLayerProps) {
 
       // Style each entity based on its fault type
       for (const entity of dataSource.entities.values) {
-        const faultType =
-          (entity.properties?.type?.getValue(viewer.clock.currentTime) as string) ?? '';
+        let faultType = '';
+        try {
+          faultType = String(entity.properties?.type?.getValue(viewer.clock.currentTime) ?? '');
+        } catch { /* property access can fail for unexpected types */ }
         const style = FAULT_STYLES[faultType] ?? DEFAULT_STYLE;
 
         if (entity.polyline) {
