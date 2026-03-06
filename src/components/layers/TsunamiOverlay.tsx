@@ -42,6 +42,27 @@ function waveSize(height: number): number {
   return Math.max(6, Math.min(20, h * 6 + 4));
 }
 
+/**
+ * Approximate Pacific NW coastline longitude by latitude.
+ * Returns true if the point is clearly on land (east of coast + small buffer).
+ * Allows ~0.2° (~20km) inland for realistic coastal inundation.
+ */
+function isOnLand(lat: number, lon: number): boolean {
+  let coastLon: number;
+  if (lat > 50) coastLon = -127.5;       // BC coast (complex fjords)
+  else if (lat > 48.5) coastLon = -124.7; // Strait of Juan de Fuca
+  else if (lat > 47.0) coastLon = -124.3; // Washington coast
+  else if (lat > 46.2) coastLon = -124.0; // Southern WA
+  else if (lat > 46.0) coastLon = -123.9; // Columbia River mouth
+  else if (lat > 43.5) coastLon = -124.2; // Central Oregon coast
+  else if (lat > 42.0) coastLon = -124.4; // Southern Oregon coast
+  else if (lat > 40.5) coastLon = -124.3; // Northern California
+  else coastLon = -124.0;
+
+  // Allow 0.3° (~25km) east of coastline for inundation visualization
+  return lon > coastLon + 0.3;
+}
+
 export default function TsunamiOverlay({ viewer }: TsunamiOverlayProps) {
   const visible = useAppStore((s) => s.layers.tsunami.visible);
   const animationTime = useAppStore((s) => s.animationTime);
@@ -86,6 +107,7 @@ export default function TsunamiOverlay({ viewer }: TsunamiOverlayProps) {
     // First pass: glow halos (larger, dimmer)
     for (const point of frame.points) {
       if (Math.abs(point.height) < 0.05) continue;
+      if (isOnLand(point.latitude, point.longitude)) continue;
 
       const size = waveSize(point.height);
       const pos = Cartesian3.fromDegrees(point.longitude, point.latitude, 0);
@@ -100,6 +122,7 @@ export default function TsunamiOverlay({ viewer }: TsunamiOverlayProps) {
     // Second pass: core dots (bright and solid)
     for (const point of frame.points) {
       if (Math.abs(point.height) < 0.05) continue;
+      if (isOnLand(point.latitude, point.longitude)) continue;
 
       collection.add({
         position: Cartesian3.fromDegrees(point.longitude, point.latitude, 0),

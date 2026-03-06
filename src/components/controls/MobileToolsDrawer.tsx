@@ -27,7 +27,7 @@ export default function MobileToolsDrawer() {
       side="right"
       onClose={() => setActiveDrawer(null)}
     >
-      <div className="p-4 pt-14">
+      <div className="p-4 pt-5">
         <h2
           className="text-slate-100 mb-4"
           style={{ fontFamily: '"DM Sans", sans-serif', fontWeight: 600, fontSize: '15px' }}

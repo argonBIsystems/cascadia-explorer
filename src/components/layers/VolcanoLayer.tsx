@@ -9,6 +9,9 @@ import {
   HorizontalOrigin,
   NearFarScalar,
   LabelStyle,
+  ScreenSpaceEventHandler,
+  ScreenSpaceEventType,
+  defined,
 } from 'cesium';
 import { useVolcanoes, type VolcanoFeature } from '../../hooks/useVolcanoes';
 import { useAppStore } from '../../store/useAppStore';
@@ -65,14 +68,60 @@ export default function VolcanoLayer({ viewer }: VolcanoLayerProps) {
   const visible = useAppStore((s) => s.layers.volcanoes.visible);
   const setLayerLoading = useAppStore((s) => s.setLayerLoading);
   const setLayerError = useAppStore((s) => s.setLayerError);
+  const setSelectedVolcano = useAppStore((s) => s.setSelectedVolcano);
 
   const entitiesRef = useRef<Entity[]>([]);
   const canvasCacheRef = useRef<Map<string, HTMLCanvasElement>>(new Map());
+  const volcanoDataRef = useRef<Map<string, VolcanoFeature>>(new Map());
+  const handlerRef = useRef<ScreenSpaceEventHandler | null>(null);
 
   // Track loading state
   useEffect(() => {
     setLayerLoading('volcanoes', !volcanoes);
   }, [volcanoes, setLayerLoading]);
+
+  // Set up click handler
+  useEffect(() => {
+    const handler = new ScreenSpaceEventHandler(viewer.scene.canvas);
+
+    handler.setInputAction(
+      (event: ScreenSpaceEventHandler.PositionedEvent) => {
+        const picked = viewer.scene.pick(event.position);
+
+        if (defined(picked) && picked.id instanceof Entity) {
+          const entityId = picked.id.id;
+          if (typeof entityId === 'string' && entityId.startsWith('volcano-')) {
+            // Prevent Cesium from auto-tracking/flying to the entity
+            viewer.selectedEntity = undefined;
+            viewer.trackedEntity = undefined;
+
+            const volcanoFeature = volcanoDataRef.current.get(entityId);
+            if (volcanoFeature) {
+              const [lon, lat] = volcanoFeature.geometry.coordinates;
+              setSelectedVolcano({
+                name: volcanoFeature.properties.name,
+                latitude: lat,
+                longitude: lon,
+                elevation: volcanoFeature.properties.elev_m,
+                alertLevel: volcanoFeature.properties.alert_level ?? 'Unknown',
+                threatScore: volcanoFeature.properties.threat_score,
+              });
+            }
+          }
+        }
+      },
+      ScreenSpaceEventType.LEFT_CLICK,
+    );
+
+    handlerRef.current = handler;
+
+    return () => {
+      if (handlerRef.current) {
+        handlerRef.current.destroy();
+        handlerRef.current = null;
+      }
+    };
+  }, [viewer, setSelectedVolcano]);
 
   // Create entities when volcano data arrives
   useEffect(() => {
@@ -81,6 +130,7 @@ export default function VolcanoLayer({ viewer }: VolcanoLayerProps) {
       viewer.entities.remove(entity);
     }
     entitiesRef.current = [];
+    volcanoDataRef.current.clear();
 
     if (!volcanoes) return;
 
@@ -95,18 +145,15 @@ export default function VolcanoLayer({ viewer }: VolcanoLayerProps) {
         }
 
         const position = Cartesian3.fromDegrees(lon, lat, 0);
+        const entityId = `volcano-${v.properties.vnum}`;
 
-        const desc = `<table style="font-family:sans-serif;font-size:13px">
-  <tr><td>Elevation</td><td>${v.properties.elev_m} m</td></tr>
-  <tr><td>Alert Level</td><td>${v.properties.alert_level ?? 'Unknown'}</td></tr>
-  <tr><td>Threat Score</td><td>${v.properties.threat_score}</td></tr>
-</table>`;
+        // Store volcano data for click handler lookup
+        volcanoDataRef.current.set(entityId, v);
 
         const entity = viewer.entities.add({
-          id: `volcano-${v.properties.vnum}`,
+          id: entityId,
           name: v.properties.name,
           position,
-          description: desc,
           billboard: {
             image: canvasCacheRef.current.get(color)!,
             width: 32,

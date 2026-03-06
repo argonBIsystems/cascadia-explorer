@@ -67,6 +67,15 @@ export interface CoastalArrival {
   maxHeight: number;      // meters
 }
 
+export interface SelectedVolcano {
+  name: string;
+  latitude: number;
+  longitude: number;
+  elevation: number;
+  alertLevel: string;
+  threatScore: number;
+}
+
 export type AnnotationCategory =
   | 'slab-tear'
   | 'terrane'

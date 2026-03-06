@@ -11,14 +11,20 @@ import {
 import { useCouplingData } from '../../hooks/useCouplingData';
 import { useAppStore } from '../../store/useAppStore';
 
+/**
+ * Color by coupling coefficient.
+ * Higher coupling = more locked = warmer colors.
+ * Uses higher alpha for better visibility on the dark globe.
+ */
 function couplingColor(c: number): Color {
-  if (c < 0.2) return Color.fromCssColorString('#3b82f6').withAlpha(0.3);
-  if (c < 0.5) return Color.fromCssColorString('#a78bfa').withAlpha(0.35);
-  if (c < 0.8) return Color.fromCssColorString('#f59e0b').withAlpha(0.45);
-  return Color.fromCssColorString('#ef4444').withAlpha(0.55);
+  if (c < 0.2) return Color.fromCssColorString('#3b82f6').withAlpha(0.45);   // blue — creeping
+  if (c < 0.5) return Color.fromCssColorString('#a78bfa').withAlpha(0.50);   // purple — partial
+  if (c < 0.8) return Color.fromCssColorString('#f59e0b').withAlpha(0.60);   // amber — mostly locked
+  return Color.fromCssColorString('#ef4444').withAlpha(0.70);                 // red — fully locked
 }
 
-const CELL_SIZE = 0.2;
+// Slightly larger cells with overlap for smoother appearance
+const CELL_SIZE = 0.25;
 
 interface CouplingLayerProps {
   viewer: Viewer;

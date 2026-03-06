@@ -107,7 +107,7 @@ export default function LayerPanel() {
         side="left"
         onClose={() => setActiveDrawer(null)}
       >
-        <div className="p-4 pt-14">
+        <div className="p-4 pt-5">
           {content}
         </div>
       </DrawerOverlay>

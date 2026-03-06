@@ -26,6 +26,7 @@ import TremorPlayer from './components/controls/TremorPlayer';
 import WhatIfPanel from './components/controls/WhatIfPanel';
 import InfoCard from './components/info/InfoCard';
 import AnnotationInfoCard from './components/info/AnnotationInfoCard';
+import VolcanoInfoCard from './components/info/VolcanoInfoCard';
 import CrossSectionView from './components/info/CrossSectionView';
 import Legend from './components/ui/Legend';
 import AboutModal from './components/ui/AboutModal';
@@ -98,6 +99,7 @@ function App() {
           {!isMobile && <BottomBar />}
           <InfoCard />
           <AnnotationInfoCard />
+          <VolcanoInfoCard />
           <CrossSectionView />
           <Legend />
           <ScenarioSelector />

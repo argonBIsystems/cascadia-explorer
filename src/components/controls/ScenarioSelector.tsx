@@ -71,7 +71,7 @@ export default function ScenarioSelector() {
         side="right"
         onClose={() => setActiveDrawer(null)}
       >
-        <div className="p-4 pt-14">
+        <div className="p-4 pt-5">
           {!visible ? (
             <p className="text-sm text-slate-500">Enable the &quot;M9 Scenarios&quot; layer to view scenarios.</p>
           ) : (

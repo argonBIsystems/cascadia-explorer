@@ -142,7 +142,7 @@ export default function InfoCard() {
   if (isMobile) {
     return (
       <DrawerOverlay open={true} side="right" onClose={() => setSelectedEarthquake(null)}>
-        <div className="p-5 pt-14">
+        <div className="p-5 pt-6">
           {cardContent}
         </div>
       </DrawerOverlay>

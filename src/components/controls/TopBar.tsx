@@ -81,9 +81,9 @@ export default function TopBar({ onAboutClick, onDataSourcesClick, onTourClick }
         <span className="text-white text-sm font-medium">ArgonBI</span>
       </div>
 
-      {/* Center: Title */}
+      {/* Center: Title — hidden on mobile to prevent overlap with action buttons */}
       <div
-        className="absolute left-1/2 -translate-x-1/2 text-slate-300 tracking-wide"
+        className="hidden md:block absolute left-1/2 -translate-x-1/2 text-slate-300 tracking-wide"
         style={{
           fontFamily: '"DM Sans", sans-serif',
           fontWeight: 500,

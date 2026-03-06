@@ -158,19 +158,21 @@ export default function Timeline({ viewer }: TimelineProps) {
   // -------------------------------------------------------------------------
   // Toggle button (always visible)
   // -------------------------------------------------------------------------
+  // On mobile, MobileTabBar handles the timeline toggle — no separate button needed
   if (!timelineOpen) {
+    if (isMobile) return null;
     return (
       <button
         type="button"
         onClick={() => setTimelineOpen(true)}
-        className={`
-          fixed ${isMobile ? 'bottom-[68px]' : 'bottom-4'} right-4 z-50
+        className="
+          fixed bottom-4 right-4 z-50
           bg-[#0c1222]/[0.92] backdrop-blur-xl
           border border-white/[0.18] rounded-xl
           px-3 py-2 flex items-center gap-2
           text-slate-400 hover:text-slate-200
           hover:bg-[#0c1222] transition-colors cursor-pointer
-        `}
+        "
         style={{ fontFamily: '"DM Sans", sans-serif', fontSize: '13px', fontWeight: 500 }}
       >
         {/* Clock icon */}
@@ -193,9 +195,11 @@ export default function Timeline({ viewer }: TimelineProps) {
         bg-[#0c1222]/[0.92] backdrop-blur-xl
         border-t border-white/[0.18]
         flex flex-col
-        ${isMobile ? 'pb-[60px]' : ''}
       `}
-      style={{ fontFamily: '"DM Sans", sans-serif' }}
+      style={{
+        fontFamily: '"DM Sans", sans-serif',
+        ...(isMobile ? { paddingBottom: 'calc(60px + env(safe-area-inset-bottom, 0px))' } : {}),
+      }}
     >
       {/* ---- Narrative panel (slides up when event selected) ---- */}
       {selectedEvent && (

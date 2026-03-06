@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { TimeRange, LayerId, LayerState, SelectedEarthquake, ReferenceFrame } from '../types';
+import type { TimeRange, LayerId, LayerState, SelectedEarthquake, SelectedVolcano, ReferenceFrame } from '../types';
 
 interface AppState {
   // Layer visibility
@@ -53,6 +53,10 @@ interface AppState {
   setTimelineOpen: (open: boolean) => void;
   selectedTimelineEvent: string | null;
   setSelectedTimelineEvent: (id: string | null) => void;
+
+  // Selected volcano
+  selectedVolcano: SelectedVolcano | null;
+  setSelectedVolcano: (v: SelectedVolcano | null) => void;
 
   // What-If scenario builder
   whatIfLocation: { lat: number; lon: number } | null;
@@ -114,7 +118,7 @@ export const useAppStore = create<AppState>((set) => ({
   timeRange: '30d',
   setTimeRange: (range) => set({ timeRange: range }),
   selectedEarthquake: null,
-  setSelectedEarthquake: (eq) => set({ selectedEarthquake: eq, selectedAnnotation: null }),
+  setSelectedEarthquake: (eq) => set({ selectedEarthquake: eq, selectedAnnotation: null, selectedVolcano: null, ...(eq != null ? { activeDrawer: null } : {}) }),
   globeReady: false,
   setGlobeReady: (ready) => set({ globeReady: ready }),
   topBarVisible: true,
@@ -132,11 +136,13 @@ export const useAppStore = create<AppState>((set) => ({
   crossSectionLat: 46.0,
   setCrossSectionLat: (lat) => set({ crossSectionLat: lat }),
   selectedAnnotation: null,
-  setSelectedAnnotation: (id) => set({ selectedAnnotation: id, selectedEarthquake: null }),
+  setSelectedAnnotation: (id) => set({ selectedAnnotation: id, selectedEarthquake: null, selectedVolcano: null, ...(id != null ? { activeDrawer: null } : {}) }),
   timelineOpen: false,
   setTimelineOpen: (open) => set({ timelineOpen: open }),
   selectedTimelineEvent: null,
   setSelectedTimelineEvent: (id) => set({ selectedTimelineEvent: id }),
+  selectedVolcano: null,
+  setSelectedVolcano: (v) => set({ selectedVolcano: v, selectedEarthquake: null, selectedAnnotation: null, activeDrawer: null }),
   whatIfLocation: null,
   setWhatIfLocation: (loc) => set({ whatIfLocation: loc }),
   selectedEtsEpisode: null,
@@ -150,5 +156,9 @@ export const useAppStore = create<AppState>((set) => ({
   activeDrawer: null,
   setActiveDrawer: (drawer) => set((state) => ({
     activeDrawer: state.activeDrawer === drawer ? null : drawer,
+    // Clear selection drawers when opening a panel drawer to prevent overlap
+    ...(drawer != null && state.activeDrawer !== drawer
+      ? { selectedEarthquake: null, selectedAnnotation: null }
+      : {}),
   })),
 }));

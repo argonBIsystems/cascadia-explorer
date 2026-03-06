@@ -15,10 +15,10 @@ interface TremorLayerProps {
 
 function tremorColor(depth: number): Color {
   // Purple-tinted depth scale for ETS tremor
-  if (depth < 30) return Color.fromCssColorString('#c084fc').withAlpha(0.8); // purple-400
-  if (depth < 35) return Color.fromCssColorString('#a855f7').withAlpha(0.8); // purple-500
-  if (depth < 40) return Color.fromCssColorString('#7c3aed').withAlpha(0.8); // violet-600
-  return Color.fromCssColorString('#6d28d9').withAlpha(0.8); // violet-700
+  if (depth < 30) return Color.fromCssColorString('#c084fc').withAlpha(0.9); // purple-400
+  if (depth < 35) return Color.fromCssColorString('#a855f7').withAlpha(0.9); // purple-500
+  if (depth < 40) return Color.fromCssColorString('#7c3aed').withAlpha(0.9); // violet-600
+  return Color.fromCssColorString('#6d28d9').withAlpha(0.9); // violet-700
 }
 
 export default function TremorLayer({ viewer }: TremorLayerProps) {
@@ -44,23 +44,38 @@ export default function TremorLayer({ viewer }: TremorLayerProps) {
 
     const points = new PointPrimitiveCollection();
 
-    // Also show fading trail of previous 3 days
-    for (let d = Math.max(0, tremorDay - 3); d <= tremorDay; d++) {
+    // Show fading trail of previous 5 days for clearer migration visualization
+    for (let d = Math.max(0, tremorDay - 5); d <= tremorDay; d++) {
       const trailFrame = episode.frames.find((f) => f.day === d);
       if (!trailFrame) continue;
 
       const age = tremorDay - d;
-      const alphaMultiplier = age === 0 ? 1.0 : 0.6 - age * 0.15;
+      const alphaMultiplier = age === 0 ? 1.0 : Math.max(0.15, 0.7 - age * 0.11);
+      const isCurrent = age === 0;
 
       for (const evt of trailFrame.events) {
         const color = tremorColor(evt.depth);
+        const baseSize = isCurrent ? 7 + evt.amplitude * 0.8 : 4 + evt.amplitude * 0.3;
+
+        // Glow halo for current-day events
+        if (isCurrent) {
+          points.add({
+            position: Cartesian3.fromDegrees(evt.lon, evt.lat, 0),
+            pixelSize: baseSize * 2.5,
+            color: new Color(color.red, color.green, color.blue, 0.15),
+            scaleByDistance: new NearFarScalar(1.0e5, 1.5, 5.0e6, 0.4),
+            disableDepthTestDistance: Number.POSITIVE_INFINITY,
+          });
+        }
+
+        // Core dot
         points.add({
           position: Cartesian3.fromDegrees(evt.lon, evt.lat, 0),
-          pixelSize: age === 0 ? 6 + evt.amplitude : 4,
+          pixelSize: baseSize,
           color: new Color(color.red, color.green, color.blue, Math.max(0.1, alphaMultiplier)),
-          outlineColor: Color.fromCssColorString('#a855f7').withAlpha(age === 0 ? 0.5 : 0.1),
-          outlineWidth: age === 0 ? 2 : 0,
-          scaleByDistance: new NearFarScalar(1.0e5, 1.5, 5.0e6, 0.3),
+          outlineColor: Color.fromCssColorString('#a855f7').withAlpha(isCurrent ? 0.6 : 0.1),
+          outlineWidth: isCurrent ? 2 : 0,
+          scaleByDistance: new NearFarScalar(1.0e5, 1.5, 5.0e6, 0.4),
           disableDepthTestDistance: Number.POSITIVE_INFINITY,
         });
       }

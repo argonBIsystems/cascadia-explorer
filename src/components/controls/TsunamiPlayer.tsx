@@ -48,9 +48,12 @@ export default function TsunamiPlayer() {
   const triggeredArrivals = arrivals?.filter((a) => a.arrivalMinutes <= animationTime) ?? [];
 
   return (
-    <div className={`fixed z-40 bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4 ${
-      isMobile ? 'bottom-[60px] left-2 right-2' : 'bottom-24 right-4 w-72'
-    }`}>
+    <div
+      className={`fixed z-40 bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-2xl p-4 ${
+        isMobile ? 'left-2 right-2' : 'bottom-24 right-4 w-72'
+      }`}
+      style={isMobile ? { bottom: 'calc(60px + env(safe-area-inset-bottom, 0px))' } : undefined}
+    >
       <h3
         className="text-slate-100 mb-1"
         style={{ fontFamily: '"DM Sans", sans-serif', fontWeight: 600, fontSize: '14px' }}

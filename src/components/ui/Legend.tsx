@@ -43,11 +43,14 @@ export default function Legend() {
   if (!showEarthquakes && !showSlab && !showFaults && !showGPS && !showScenarios && !showTsunami && !showVolcanoes && !showCoupling && !showPioneer && !showSensors && !showTremor && !showHazard) return null;
 
   return (
-    <div className={`fixed z-30 flex max-h-[calc(100vh-200px)] overflow-y-auto ${
-      isMobile
-        ? 'bottom-[68px] left-2 right-2 flex-row gap-2 overflow-x-auto max-w-none'
-        : 'bottom-4 left-[17.5rem] flex-col gap-3 max-w-[180px]'
-    }`}>
+    <div
+      className={`fixed z-30 flex max-h-[calc(100vh-200px)] overflow-y-auto ${
+        isMobile
+          ? 'left-2 right-2 flex-row gap-2 overflow-x-auto max-w-none'
+          : 'bottom-4 left-[17.5rem] flex-col gap-3 max-w-[180px]'
+      }`}
+      style={isMobile ? { bottom: 'calc(64px + env(safe-area-inset-bottom, 0px))' } : undefined}
+    >
       {/* Depth color scale — shown for earthquakes or slab */}
       {(showEarthquakes || showSlab) && (
         <div className="bg-[#0c1222]/[0.92] backdrop-blur-xl border border-white/[0.18] rounded-xl p-3 shrink-0">
